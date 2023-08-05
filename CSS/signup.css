@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#login-main {
+    display: flex;
+    width: calc(1335px * 0.75);
+    height: calc(859px* 0.75);
+    border-radius: 35px;
+    background: #F5F5FF;
+    overflow: hidden;
+}
+#login-part {
+    margin: 70px;
+    padding: 30px;
+    width: calc(480px * 0.75);
+    height: calc(680px * 0.75);
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+#login-part > p:nth-child(1) {
+    color: #2B2A2A;
+    font-size: 20px;
+    font-weight: 700;
+}
+#login-part > p:nth-child(2) {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #2B2A2A;
+}
+.login-p {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    color: #8A7E7E;
+    font-size: 14px;
+    font-weight: 500;
+}
+#categoria {
+    display: flex;
+}
+#student {
+    margin-top: -5px;
+    margin-right: 5px;
+}
+#teacher {
+    margin-left: 20px;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.categories-label {
+    font-weight: 700;
+    font-size: 14px;
+}
+input {
+    outline: 0;
+    margin-top: 4px;
+    width: 290px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #D2D2D2;
+    padding: 4px;
+}
+#password-input {
+    padding-right: 33px;
+}
+.eye-icon {
+    position: absolute;
+    margin-left: -30px;
+    top: 57.7%;
+    cursor: pointer;
+}
+#forgot {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8A7E7E;
+    margin-left: calc(65%);
+}
+#privacy {
+    display: flex;
+}
+#privacy-text {
+    margin-top: 19px;
+    margin-left: 3px;
+}
+#privacy-text > p {
+    color: #8A7E7E;
+    font-size: 12px;
+    font-weight: 500;
+}
+#privacy-text a {
+    font-size: 11px;
+    font-weight: 500;
+}
+.checkbox {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 18px;
+    border-radius: 5px;
+    border: 1px solid #8A7E7E;
+}
+#privacy > input {
+    margin-right: 5px;
+}
+button {
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    padding: 12px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #675AF0;
+    outline: 0;
+    border: 0;
+    color: white;
+}
+#img-part {
+    width: 50%;
+    background: url(https://s3-alpha-sig.figma.com/img/9932/ef33/f2cb6b9aa5f04c4f1934ee021de80816?Expires=1691971200&Signature=QqMRPxqCYz~9nJhzUoB2aedeJET8p5ReOucEag3XIGMIQUSYeduI1j1LjUtkSUsXTV8iP18Ayzvx2X0iYDI6R-eDEaA-0deavQ0dAK-yBOBRggx7coAF8~krOeHNx1AzjyB47B2yeSc5DyzyQCdVxQj~uVYqplf64h9sKu7h3ix8h-NFGNTD~gsZEjgkZrdchDYL2IQT-FqK34EavnjUM0JN7Ciawt3ZNJfP8R-NBLlYx~Sgz6BujI74DB4T-o9Qo6TytX6abKkmstb4aEvAWDA6~2sp5S-mRkJj7ONN2mHMgfZ2oQisLWyeb~3Lu9Fqop9Xf5I2U-Kk0X7DfobG1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4), lightgray 50% / cover no-repeat;
+    background-size: contain;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<form action="">
+<body>
+    <div id="login-main">
+        <div id="img-part"></div>
+            <div id="login-part">
+                <p>Create new account</p>
+                <p class="login-p">I am</p>
+                <div id="categoria">
+                    <input name="jh" type="radio" id="student" class="checkbox">
+                    <label for="student" class="categories-label">Student</label>
+                    <input name="jh" type="radio" id="teacher" class="checkbox">
+                    <label for="teacher" class="categories-label">Teacher</label>
+                </div>
+                <label for="date" class="login-p">Date of birth</label>
+                <input id="date" type="date" required>
+                <label for="email" class="login-p">Email</label>
+                <input id="email" type="email" required>
+                <label for="password-input" class="login-p">Password</label>
+                <input id="password-input" type="password" required>
+                <span class="eye-icon"><img src="./iMAGES/eye.svg" alt=""></span>
+                <a href="" id="forgot">Forgot password</a>
+                <div id="privacy">
+                    <input type="checkbox" class="checkbox" id="privacy-checkbox" required>
+                    <div id="privacy-text">
+                        <p>I accept (name) and Terms of Services</p>
+                        <a href="">Privacy Policy</a>
+                    </div>   
+                </div>
+                <button id="signup">Sign Up</button>
+            </div>
+    </div>
+
+    <script src="./JS/signup.js"></script>
+</body>
+</form>
+</html>
