@@ -2,7 +2,7 @@
 let eyeicon = document.querySelector('span');
 let password = document.querySelector('#password-input');
 let login = document.querySelector('button');
-
+//password type password or text
 eyeicon.addEventListener('click', visibilty);
 
 function visibilty () {
@@ -13,19 +13,18 @@ function visibilty () {
       }
 }
 
-
 let allUsers = []; 
 
 if (localStorage.getItem('allUsers')) {
   allUsers = JSON.parse(localStorage.getItem('allUsers'));
 }
-
+//check if user is already exist or not
 login.addEventListener("click", function () {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password-input").value;
 
     if (email !== "" && password !== "") {
-        let foundUser = allUsers.find(user => user.email === email && user.password === password);
+        let foundUser = allUsers.find(user => user.email === email && user.password === password);//?user.email and user.password are exist and correct or not
 
         if (foundUser) {
             alert("Login successful!");
