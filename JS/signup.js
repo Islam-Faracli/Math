@@ -9,13 +9,13 @@ let inputyear
 eyeicon.addEventListener('click', visibilty);
 
 function visibilty () {
-    if (password.type == 'password') {
-        password.type = 'text';
-        eyeicon.classList.replace('eye-icon-hide', 'eye-icon-visible');
-    } else {
-        password.type = 'password';
-        eyeicon.classList.replace('eye-icon-hide', 'eye-icon-visible');
-    }
+  if (password.type === 'password') {
+      password.type = 'text';
+      eyeicon.classList.replace('eye-icon-hide', 'eye-icon-visible');
+  } else {
+      password.type = 'password';
+      eyeicon.classList.replace('eye-icon-visible', 'eye-icon-hide');
+  }
 }
 //
 privacyCheckbox.addEventListener('click', () => {
@@ -42,7 +42,7 @@ if (checked && date !== "" && email !== "" && password !== "") {
     alert("This email is already exists. Please try with another email.");
   } else {
     if (year < 7) {
-      alert("Please choose another date!");
+      alert("Please choose another date! Your age must be higher than 7.");
     } else {
       if (password.length < 8) {
         alert("Password must be at least 8 characters long.");
