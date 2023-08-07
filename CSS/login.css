@@ -56,12 +56,21 @@ input {
 #password-input {
     padding-right: 33px;
 }
-.eye-icon {
+#eye-icon {
+    width: 23px;
+    height: 23px;
     position: absolute;
     margin-left: 225px;
-    top: 54.3%;
-    transform: translateY(-50%);
+    top: 52.3%;
     cursor: pointer;
+}
+.eye-icon-hide {
+    background-image: url(../ICONS/hide.png);
+    background-size: cover;
+}
+.eye-icon-visible {
+    background-image: url(../ICONS/visible.png);
+    background-size: cover;
 }
 #forgot {
     font-size: 12px;
@@ -71,6 +80,24 @@ input {
 }
 #privacy {
     display: flex;
+}
+.privacy-checkbox {
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 2px solid #D2D2D2;
+    cursor: pointer;
+    padding: 3px;
+}
+.privacy-checkbox-img {
+    background-image: url(../ICONS/check.png);
+    background-size: cover;
+    background-color: var(--purple);
+    border: 0;
+    outline: 0;
 }
 #privacy-text {
     margin-top: 19px;
@@ -84,7 +111,7 @@ input {
 #privacy-text a {
     font-size: 11px;
     font-weight: 500;
-    color:#675AF0;
+    color: var(--purple);
 }
 #checkbox {
     cursor: pointer;
@@ -102,7 +129,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    background: #675AF0;
+    background: var(--purple);
     outline: 0;
     border: 0;
     color: white;

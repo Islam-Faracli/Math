@@ -1,49 +1,68 @@
-let eyeicon = document.querySelector('span');
-let password = document.querySelector('#password-input');
+let eyeicon = document.querySelector('#eye-icon');
+let password = document.querySelector
+('#password-input');
 let login = document.querySelector('button');
+let privacyCheckbox = document.querySelector('.privacy-checkbox');
+let checked;
+let inputyear
 //password type password or text
 eyeicon.addEventListener('click', visibilty);
 
 function visibilty () {
-    if (password.type == "password") {
-        password.type = "text";
-      } else {
-        password.type = "password";
-      }
+    if (password.type == 'password') {
+        password.type = 'text';
+        eyeicon.classList.replace('eye-icon-hide', 'eye-icon-visible');
+    } else {
+        password.type = 'password';
+        eyeicon.classList.replace('eye-icon-hide', 'eye-icon-visible');
+    }
 }
+//
+privacyCheckbox.addEventListener('click', () => {
+    checked = privacyCheckbox.classList.toggle('privacy-checkbox-img');
+});
 
 //check sign in conditions
 let allUsers = []; //? Array to store all user data
 
 login.addEventListener("click", function () {
-    let email = document.getElementById("email").value;
+    let email = document.getElementById('email').value;
     let password = document.getElementById("password-input").value;
     let date = document.getElementById("date").value;
-    let checkbox = document.getElementById("privacy-checkbox")
     let student = document.getElementById("student");
+    inputyear = date.slice(0, 4);
+    let currentdate = new Date();
+    let currentyear = currentdate.getFullYear();
+    let year = currentyear - inputyear;
 
-    if (checkbox.checked && date !== "" && email !== "" && password !== "") {
-        let foundUser = allUsers.find(user => user.email === email);//?check if email is already exists or not
-        if (foundUser) {
-            alert("This email is already exists. Please try with another email.");
-        }
-        else {
-        let userData = {
-            rank: student.checked ? "student" : "teacher", 
-            email: email,
-            password: password,
-            date: date
-        };//? create new user
+if (checked && date !== "" && email !== "" && password !== "") {
+  let foundUser = allUsers.find(user => user.email === email);
 
-        allUsers.unshift(userData); //? add to all users
-        
-        let allUsersJSON = JSON.stringify(allUsers);
-        localStorage.setItem('allUsers', allUsersJSON); //? set to localstorage
-    }
+  if (foundUser) {
+    alert("This email is already exists. Please try with another email.");
+  } else {
+    if (year < 7) {
+      alert("Please choose another date!");
     } else {
-        alert("Please fill in all the required fields and accept the privacy policy.");
-    } //? error message
-});
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+      } else {
+        let userData = {
+          rank: student.checked ? "student" : "teacher",
+          email: email,
+          password: password,
+          date: date
+        };
+
+        allUsers.unshift(userData);
+        let allUsersJSON = JSON.stringify(allUsers);
+        localStorage.setItem("allUsers", allUsersJSON);
+      }
+    }
+  }
+} else {
+  alert("Please fill in all the required fields and accept the privacy policy.");
+}
 
 //when onload restore the users info
 window.onload = function () {
@@ -51,4 +70,4 @@ window.onload = function () {
     if (localusers) {
         allUsers = localusers;
     } 
-};
+}});
