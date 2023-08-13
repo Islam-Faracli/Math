@@ -55,3 +55,9 @@ ul{
     border-radius: 8px;
     font-size: 11px;
 }
+
+.active{
+    background-color: var(--purple);
+    padding: 12px 38px;
+    border-radius: 12px;
+}
