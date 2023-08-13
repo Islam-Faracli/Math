@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/color.css">
     <title>Login</title>
 </head>
 <form action="">
@@ -16,13 +17,13 @@
             <p>Login</p>
             <p class="login-p">Welcome back! Please enter your details.</p>
             <label for="email" class="login-p">Email</label>
-            <input id="email" type="email" required>
+            <input id="email" type="email" autocomplete="off" required>
             <label for="password-input" class="login-p">Password</label>
             <input id="password-input" type="password" required>
-            <span class="eye-icon"><img src="./iMAGES/eye.svg" alt=""></span>
+            <span id="eye-icon" class="eye-icon-hide"></span>
             <a href="" id="forgot">Forgot password</a>
             <div id="privacy">
-                <input type="checkbox" id="checkbox" required>
+                <div class="privacy-checkbox"></div>
                 <div id="privacy-text">
                     <p>I accept (name) and Terms of Services</p>
                     <a href="">Privacy Policy</a>
