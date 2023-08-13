@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.lowDate{
+    text-align: center;
+}
+div{
+    width: 240px;
+    height: 230px;
+}
+div p{
+    text-align: center;
+}
+main{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
