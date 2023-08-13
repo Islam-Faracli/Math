@@ -4,7 +4,7 @@ options.forEach((element) => {
     element.addEventListener("click", ()=>{
         options.forEach((items)=>{
             items.classList.remove("selected");
-            items.ariaSelected="false";
+            
         })
         element.classList.add("selected");
         
@@ -20,16 +20,19 @@ let h2=document.querySelectorAll("h2");
 let span=document.querySelectorAll("span");
 console.log(p);
 toDark.addEventListener("click", ()=>{
-    body.classList.toggle("luboy");
     toDark.classList.toggle("toDarkMode");
-    p.forEach((item)=>{
-        item.classList.toggle("toDarkMode");
-    })
-    h2.forEach((item)=>{
-        item.classList.toggle("toDarkMode");
-    })
-    span.forEach((item)=>{
-        item.classList.toggle("toDarkMode");
-    })
+    setTimeout(()=>{
+
+        body.classList.toggle("darhTheme");
+        p.forEach((item)=>{
+            item.classList.toggle("toDarkMode");
+        })
+        h2.forEach((item)=>{
+            item.classList.toggle("toDarkMode");
+        })
+        span.forEach((item)=>{
+            item.classList.toggle("toDarkMode");
+        })
+    },250)
     
 })

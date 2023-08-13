@@ -7,46 +7,31 @@ body{
     display: flex;
     background-color: #F6F6F6;
 }
-.luboy aside{
+.darhTheme aside{
     background-color: var(--black);
 }
-.luboy header{
+.darhTheme header{
     background-color: var(--black);
 }
-.luboy{
+.darhTheme{
     background-color: #3B323B;
 }
-.luboy .about-us{
+.darhTheme .about-us{
     background-color: #302B2B;
 }
-/* .luboy p{
-    color: red;
-}
-.luboy h1{
-    color: red;
-}
-.luboy h2{
-    color: red;
-}
-.luboy span{
-    color: red;
-}
-.luboy div{
-    color: red;
-} */
-.luboy li .icon-Dashboard{
+.darhTheme li .icon-Dashboard{
     content:url(/icons/dashboard-icon-white.png);
 }
-.luboy li .icon-Imtahan{
+.darhTheme li .icon-Imtahan{
     content:url(/icons/imtahanlar-icon-white.png);
 }
-.luboy li .icon-onlinevideos{
+.darhTheme li .icon-onlinevideos{
     content:url(/icons/video-play-icon-white.png);
 }
-.luboy li .icon-scoreboard{
+.darhTheme li .icon-scoreboard{
     content:url(/icons/chart-icon-white.png);
 }
-.luboy li .icon-haqqimizda{
+.darhTheme li .icon-haqqimizda{
     content:url(/icons/stickynote.png);
 }
 .mathQuiz{
@@ -189,11 +174,20 @@ aside span{
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
     background-color: var(--white);
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.toDarkMode{
+    color: var(--white) !important;
+}
+.toDarkMode + .mode-box{
+    background-color: var(--purple);
+}
+.toDarkMode + .mode-box .mode-circle{
+    background-color: var(--black);
 }
 .toDarkMode .mode-circle{
     transform: translateX(34px);
@@ -315,9 +309,6 @@ header .user p:hover{
 }
 .certificates div:first-child , .certificates div:last-child{
     margin-top: 35px;
-}
-.toDarkMode{
-    color: var(--white);
 }
 
 

@@ -1,28 +1,60 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Inter', sans-serif ;
 }
+body{
+    background-color: #212121;
+}
+header{
+    margin: 64px 0 0 64px;
+    padding: 20px;
+    gap: 20px;
+}
+header, .container1, .container2{
+    display: flex;
+}
+.container1{
+    gap: 20px;
+}
+
+/* calendar */
 span{
     display: inline-block;
     width: 15px;
     height: 15px;
     margin: 5px;
-}
-.lowDate{
+    font-size: 11px;
+    font-weight: 400;
     text-align: center;
+    color: #B3B3B3;
+    
 }
+.weekEnd{
+    color: #17A1FA !important;
+}
+.otherMonth{
+    color: #616161;
+}
+/* .otherMonth + .weekEnd{
+    color: #1270B0 !important;
+} */
 div{
-    width: 240px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
 }
 div p{
+    color: #B3B3B3;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 14px;
     text-align: center;
+
 }
 main{
     width: 90%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 40px auto;
 }
