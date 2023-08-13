@@ -1,0 +1,162 @@
+.page-container{
+    display: flex;
+}
+
+aside{
+    background-color: var(--aside-color);
+    width: 310px;
+    height: 100%;
+   
+}
+
+aside h2{
+    color: #fff;
+    font-size: 24px;
+    padding: 46px 0 62px;
+    text-align: center;
+}
+
+.aside-link-item{
+    position: relative;
+    left: 41px;
+}
+
+.aside-link-item:first-child a{
+    margin-top: 0;
+}
+
+.aside-link-item a{
+    color: #fff;
+    display: inline-block;
+    margin-top: 57px;
+}
+
+/*page*/
+
+.navbar{
+    background-color: var(--aside-color);
+}
+
+nav{
+    width: 90%;
+    height: 103px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    color: #fff;
+    font-size: 24px;
+}
+
+/*main*/
+
+.page{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_input{
+    padding: 8px 253px 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--aside-color);
+}
+
+form span{
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    top: 27px;
+    left: 7px;
+}
+
+.menus{
+    display: flex;
+}
+
+.sort,
+.price{
+    width: 133px;
+    height: 40px;
+    background-color: var(--aside-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*cards*/
+
+.cards{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cards .card{
+    background-color: var(--aside-color);
+    color: #fff;
+    padding-bottom: 20px;
+    width: 22%;
+    margin: 0 auto;
+}
+
+.card .name{
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card-title{
+    font-weight:700;
+    margin-left: 15px;
+}
+
+.right{
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-buttons a{
+    padding: 7px 14px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.card-buttons a:first-child{
+    background-color: var(--purple);
+}
+
+.card-buttons a:last-child{
+    background-color: var(--aside-color);
+    border: 1px solid #fff;
+}
