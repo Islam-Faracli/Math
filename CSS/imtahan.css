@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    list-style: none;
+}
+form {
+    height: 100vh;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    width: 90%;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    padding: 25px 30px 25px 30px;
+    border-radius: 14px;
+}
+#first-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#icon-left-white {
+    background: url(../ICONS/arrow-left.svg);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#first-part p {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+}
+#last-part {
+    display: flex;
+    align-items: center;
+}
+#img-circle {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: 1px solid var(--black);
+    margin-right: 20px;
+    background: url(../IMAGES/pp.jpg);
+    background-size: cover;
+}
+#last-part p{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+}
+#icon-down-white {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: url(../ICONS/arrow-down.svg);
+    margin-left: 12px;
+}
+
+main {
+    width: 86.4%;
+    height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 27px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-header {
+    display: flex;
+    align-items: end;
+    margin-top: 40px;
+}
+#main-header > :nth-child(1) {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black);
+}
+#main-header > :nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--light);
+}
+#exam-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    margin-top: 40px;
+}
+#exam-details > span > label {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+}
+#exam-details > span > div > p {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+}
+#exam-details > span > div {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--strok, #D2D2D2);
+    background: #FFF;
+    margin-top: 10px;
+}
+#telebe-adi {
+    width: 326px;
+}
+#imtahan-vaxti {
+    width: 156px;
+}
+#sual-sayi {
+    width: 156px;
+}
+#main-middle-img{
+    margin-top: 35px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    background: url(../IMAGES/pp.jpg);
+    background-size: cover;
+}
+#main-text {
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 400px;
+}
+#exam-start {
+    margin-top: 20px;
+    display: flex;
+    width: 180px;
+    height: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--purple);
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#mode-changer {
+    display: flex;
+    position: absolute;
+    right: 159px;
+    margin-top: 50px;
+    align-items: center;
+    gap: 10px;
+}
+#mode-changer p{
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 500;
+}
+#mode-case {
+    cursor: pointer;
+    display: flex;
+    width: calc(1.2*42px);
+    height: calc(1.2 * 20px);
+    padding: 4px;
+    align-items: center;
+    border-radius: 30px;
+    background: #E2E2E2;
+}
+#mode-circle {
+    width: calc(0.8 * 22px);
+    height: calc(0.8 * 22px);
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.lighttodark {
+    animation-name: todark;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes todark {
+    from {
+        padding-left: 4px;
+    }
+    to {
+        padding-left: 29px;
+    }
+}
+
+.darktolight {
+    animation-name: tolight;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes tolight {
+    from {
+        padding-left: 29px;
+    }
+    to {
+        padding-left: 4px;
+    }
+}

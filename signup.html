@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/color.css">
     <title>Sign Up</title>
 </head>
 <form action="">
@@ -15,7 +16,7 @@
         <div id="img-part"></div>
             <div id="login-part">
                 <p>Create new account</p>
-                <p class="login-p">I am</p>
+                <p class="login-p">I am</p> 
                 <div id="categoria">
                     <input name="jh" type="radio" id="student" class="checkbox">
                     <label for="student" class="categories-label">Student</label>
@@ -24,14 +25,14 @@
                 </div>
                 <label for="date" class="login-p">Date of birth</label>
                 <input id="date" type="date" required>
-                <label for="email" class="login-p">Email</label>
-                <input id="email" type="email" required>
+                <label  for="email" class="login-p">Email</label>
+                <input autocomplete="off" id="email" type="email" required>
                 <label for="password-input" class="login-p">Password</label>
                 <input id="password-input" type="password" required>
-                <span class="eye-icon"><img src="./iMAGES/eye.svg" alt=""></span>
+                <span id="eye-icon" class="eye-icon-hide"></span>
                 <a href="" id="forgot">Forgot password</a>
                 <div id="privacy">
-                    <input type="checkbox" class="checkbox" id="privacy-checkbox" required>
+                    <div class="privacy-checkbox"></div>
                     <div id="privacy-text">
                         <p>I accept (name) and Terms of Services</p>
                         <a href="">Privacy Policy</a>
