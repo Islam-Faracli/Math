@@ -1,5 +1,5 @@
-{
-    "Exams":[
+
+    [
         {
             "userImage": "../iMAGES/card-image.svg",
             "fullName": "Abdullayev Sənan",
@@ -22,7 +22,7 @@
             "price": "40 AZN"
         },
         {
-            "userImage": ".../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/card-image.svg",
             "fullName": "Rəhimli Sənan",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",

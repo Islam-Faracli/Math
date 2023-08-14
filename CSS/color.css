@@ -5,4 +5,11 @@
     --footer-black: #30333d;
     --aside-color: #2a2a2a;
     --background-color: #3B323B;
+    --text-color: #fff;
+}
+
+.dark-theme{
+    --aside-color: #fff;
+    --text-color: #2B2A2A;
+    --background-color: #F6F6F6;
 }
