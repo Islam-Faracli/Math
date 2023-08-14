@@ -1,6 +1,10 @@
 *{
     font-family: Manrope;
-   
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 body{
@@ -9,15 +13,20 @@ body{
 }
 .darhTheme aside{
     background-color: var(--black);
+    
 }
 .darhTheme header{
     background-color: var(--black);
+    
 }
 .darhTheme{
+    
     background-color: #3B323B;
+    
 }
 .darhTheme .about-us{
     background-color: #302B2B;
+    
 }
 .darhTheme li .icon-Dashboard{
     content:url(/icons/dashboard-icon-white.png);
@@ -182,6 +191,9 @@ aside span{
 }
 .toDarkMode{
     color: var(--white) !important;
+}
+.toDarkMode + .arrow-down{
+    content: url(/icons/arrow-down-white.png);
 }
 .toDarkMode + .mode-box{
     background-color: var(--purple);
