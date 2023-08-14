@@ -4,7 +4,6 @@ options.forEach((element) => {
     element.addEventListener("click", ()=>{
         options.forEach((items)=>{
             items.classList.remove("selected");
-            
         })
         element.classList.add("selected");
         
@@ -13,16 +12,14 @@ options.forEach((element) => {
 
 //dark mode
 
-let body = document.querySelector("body");
 let toDark = document.querySelector(".mode-box");
+let body = document.querySelector("body");
 let p=document.querySelectorAll("p");
 let h2=document.querySelectorAll("h2");
 let span=document.querySelectorAll("span");
-console.log(p);
-toDark.addEventListener("click", ()=>{
+    toDark.addEventListener("click", ()=>{
     toDark.classList.toggle("toDarkMode");
     setTimeout(()=>{
-
         body.classList.toggle("darhTheme");
         p.forEach((item)=>{
             item.classList.toggle("toDarkMode");

@@ -6,7 +6,7 @@ function getData(){
     .then(data => {
         for(let user of data){
             console.log(data)
-            cardDiv += `
+            cardDiv.innerHTML += `
             <div class="card">
                 <img class="student-img" src="${user.userImage}" alt="">
 
