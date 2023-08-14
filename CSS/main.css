@@ -14,7 +14,7 @@ ul{
 
 .btn-purple{
     background-color: var(--purple);
-    color: #fff;
+    color: var(--text-color);
     padding: 10px 37px;
     display: inline-block;
     border-radius: 8px;
@@ -22,7 +22,7 @@ ul{
 
 .btn-outline{
     border: 1px solid var(--purple);
-    background-color: #fff;
+    background-color: var(--text-color);
     color: var(--purple);
     padding: 10px 37px;
     display: inline-block;
@@ -31,7 +31,7 @@ ul{
 
 .btn-gold{
     background-color: var(--gold);
-    color: #fff;
+    color: var(--text-color);
     padding: 10px 37px;
     display: inline-block;
     border-radius: 8px;
@@ -39,7 +39,7 @@ ul{
 
 .card-btn{
     background-color: var(--purple);
-    color: #fff;
+    color: var(--text-color);
     padding: 7px 9px;
     display: inline-block;
     border-radius: 8px;
@@ -48,7 +48,7 @@ ul{
 
 .card-btn-outline{
     border: 1px solid var(--purple);
-    background-color: #fff;
+    background-color: var(--text-color);
     color: var(--purple);
     padding: 7px 9px;
     display: inline-block;
@@ -60,4 +60,5 @@ ul{
     background-color: var(--purple);
     padding: 12px 38px;
     border-radius: 12px;
+    color: #fff !important;
 }
