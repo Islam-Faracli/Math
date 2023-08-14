@@ -1,0 +1,42 @@
+[
+    {
+        "question": "1. How many time is the bone stronger than the steel?",
+        "answer1": "5",
+        "answer2": "10",
+        "answer3": "100",
+        "answer4": "2",
+        "answer5": "50"
+    },
+    {
+        "question": "2. How much of the calcium in the whole human body is in teeth?",
+        "answer1": "55%",
+        "answer2": "20%",
+        "answer3": "86%",
+        "answer4": "99%",
+        "answer5": "7%"
+    },
+    {
+        "question": "3. Which language has not the swear-word?",
+        "answer1": "Japanese",
+        "answer2": "Korean",
+        "answer3": "German",
+        "answer4": "Portugal",
+        "answer5": "Indian"
+    },
+    {
+        "question": "4. You think, in the middle centuries, on breakfast what had the children drank?",
+        "answer1": "Beer",
+        "answer2": "Whiskey",
+        "answer3": "Bird milk",
+        "answer4": "Cappucino",
+        "answer5": "Ox's piss"
+    },
+    {
+        "question": "When was the fisrt flight to the moon?",
+        "answer1": "1969",
+        "answer2": "1959",
+        "answer3": "1975",
+        "answer4": "1956",
+        "answer5": "1994"
+    }
+]

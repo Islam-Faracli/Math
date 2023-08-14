@@ -6,8 +6,11 @@ let toggleBtn = document.querySelector("#dark-mode");
 function getData(){
     fetch("../db/Exams.json")
     .then(res => res.json())
-    .then(data => {
+
         data.forEach(element => {
+        for(let user of data){
+           
+
             cardDiv.innerHTML += `
             <div class="card">
                 <img class="student-img" src="${element.userImage}" alt="">
