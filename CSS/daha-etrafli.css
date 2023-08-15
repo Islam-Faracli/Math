@@ -1,10 +1,10 @@
 *{
     font-family: Manrope;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    /* transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear; */
 }
 
 body{
@@ -20,13 +20,22 @@ body{
     
 }
 .darhTheme{
-    
+    color: #FFF !important;
     background-color: #3B323B;
     
 }
-.darhTheme .about-us{
+.darhTheme .daha-etrafli-imtahan-page{
     background-color: #302B2B;
     
+}
+.darhTheme .image{
+    /* margin-top: 15px; */
+    width: 426px;
+    height: 270px;
+    content: url("/icons/Tiny\ students\ learning\ online\ lesson\ via\ laptop\ 1\ \(no\ bg\).png");
+}
+.darhTheme .users{
+    background-color: #302B2B;
 }
 .darhTheme li .icon-Dashboard{
     content:url(/icons/dashboard-icon-white.png);
@@ -90,7 +99,7 @@ li .options:hover{
     -ms-transition: all 0.3s ease-in-out !important;
     -o-transition: all 0.3s ease-in-out !important;
 }
-li #options-fifth{
+li #options-second{
     padding-left: 25px;
     background-color: #7f75ea;
     color: var(--white);
@@ -122,12 +131,16 @@ li .selected{
     transition: all 0.1s ease-in-out;
     padding-left: 25px;
     color: var(--white);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 li .selected .icon-Dashboard{
     content:url(/icons/dashboard-icon-white.png);
 }
-li .selected .icon-Imtahan{
+li .icon-Imtahan{
     content:url(/icons/imtahanlar-icon-white.png);
 }
 li .selected .icon-onlinevideos{
@@ -136,7 +149,7 @@ li .selected .icon-onlinevideos{
 li .selected .icon-scoreboard{
     content:url(/icons/chart-icon-white.png);
 }
-li .icon-haqqimizda{
+li .selected .icon-haqqimizda{
     content:url(/icons/stickynote.png);
 }
 
@@ -213,6 +226,7 @@ aside span{
     -ms-transform: translateX(34px);
     -o-transform: translateX(34px);
 }
+
 /* header */
 
 header{
@@ -259,73 +273,186 @@ header .user p{
 header .user p:hover{
     cursor: pointer;
 }
-.about-us{
-    padding: 30px;
+
+/* main */
+
+.daha-etrafli-imtahan-page{
     margin: 30px;
+    padding: 0 25px 15px 40px;
     background-color: var(--white);
-    border-radius: 14px;
     box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    border-radius: 14px;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
+    height: calc(100vh - 162px);
 }
-.about-us .container-info{
-    display: flex;
-    gap: 30px;
-}
-.about-us .info img{
-    width: 190px;
-    height: 240px;
-    margin-bottom: 5px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.about-us .info p{
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 700;
-}
-.about-us .info p span{
-    color: var(--light);
-    margin-left: 5px;
-}
-.about-us .about-me-text{
-    color: var(--black);
-}
-.about-us .about-me-text{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 166.1%; /* 26.576px */
-    letter-spacing: 0.4px;
-}
-.about-us h2{
-    color: var(--black);
-}
-.about-us h2{
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px 0 20px 0;
-}
-.certificates{
+.container2{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.certificates img{
-    width: 242px;
-    height: 146px;
-    border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
-    -o-border-radius: 14px;
+.buraxilis-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 40px;
 }
-.certificates div:first-child , .certificates div:last-child{
-    margin-top: 35px;
+.buraxilis-texts .info-about-exam{
+    width: 407px;
+    color: var(--light);
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.buraxilis-texts .free{
+    color: #D44949;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+}
+.buraxilis-texts .start-test{
+    border-radius: 8px;
+    width: 130px;
+    height: 43px;
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+}
+.buraxilis-texts .start-test:hover{
+    cursor: pointer;
+}
+.daha-etrafli-imtahan-page .image img{
+    width: 426px;
+    height: 270px;
+    /* margin-top: 15px; */
+}
+.about-test{
+    width: 784px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.circle{
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 59px;
+    -webkit-border-radius: 59px;
+    -moz-border-radius: 59px;
+    -ms-border-radius: 59px;
+    -o-border-radius: 59px;
+}
+.content .circle p{
+    color: var(--white) !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+.line{
+    width: 193px;
+    height: 2px;
+    border-top: dashed 2px #8A7E7E;
+    align-self: center;
+}
+.exam-starts, .time, .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.exam-starts p:nth-child(1), .time p:nth-child(1), .content p:nth-child(1){
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+} 
+.exam-starts p:nth-child(3), .time p:nth-child(3), .content p:nth-child(3){
+    color: var(--light);
+    font-size: 14px;
+    font-weight: 700;
 }
 
+/* Reytinq */
 
+.reytinq .just-texts{
+    width: 100%;
+    display: flex;
+}
+.reytinq .just-texts h2{
+    color: var(--black);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.toDarkMode .just-texts h2{
+    color: var(--white) !important;
+}
+.red-box{
+    width: 450px;
+    display: flex;
+    margin-left: 500px;
+    align-items: flex-end;
+    /* flex-grow: 1; */
+}
+.red-box p{
+    color:  #D44949;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.red-box p:nth-child(2){
+    margin-left: 107px;
+}
+.toDarkMode .just-texts .red-box p{
+    color: var(--white) !important;
+}
+.users{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 62px 0 30px;
+    width: 100%;
+    height: 62px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+}
+.users img{
+    margin-right: 20px;
+}
+.users p:nth-child(2){
+    margin-right: 400px;
+    width: 150px;
+}
+.users p:nth-child(3){
+    margin-right: 100px;
+}
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  } */
+   
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+      background: var(--purple); 
+      border-radius: 10px;
+    } */
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7f75ea; 
+  }
