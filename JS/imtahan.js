@@ -1,5 +1,5 @@
 let modeChanger = document.querySelector('#mode-case');
-let allptexts = document.querySelectorAll("p:not(.header-second-part)");
+
 let alllabeltexts = document.querySelectorAll('label');
 let headerpart = document.querySelector('header');
 let formpart = document.querySelector('form');
@@ -10,7 +10,7 @@ let textboxes = document.getElementsByClassName('details');
 let modecircle = document.querySelector('#mode-circle');
 let barcase = document.querySelector('#bar');
 let usericon = document.querySelector('#telebe-adi-icon');
-let options = document.querySelectorAll('.options');
+
 
 modeChanger.addEventListener('click', () => {
     
@@ -18,6 +18,8 @@ modeChanger.addEventListener('click', () => {
         modeChanger.classList.replace('darktolight', 'lighttodark');
         
         setTimeout(() => {
+            let options = document.querySelectorAll('.options');
+            let allptexts = document.querySelectorAll("p:not(.header-second-part)");
         for (let i = 0; i < allptexts.length; i++) {
             allptexts[i].style.color = 'white';
         }
