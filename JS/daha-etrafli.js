@@ -15,20 +15,20 @@ options.forEach((element) => {
 // Api part
 
 let reytinq=document.querySelector(".reytinq");
-// fetch("/db/reytinq.json")
-// .then((response)=>response.json())
-// .then((data)=>{
-//     data.forEach((item)=>{
-//         reytinq.innerHTML+=`
-//         <div class="users" >
-//         <img src="/icons/crown-icon.png" alt="">
-//         <p class="username">${item.fullName}</p>
-//         <p class="points">${item.point}</p>
-//         <p class="date">${item.date}</p>
-//         </div>
-//         `;
-//     })
-// })
+fetch("/db/reytinq.json")
+.then((response)=>response.json())
+.then((data)=>{
+    data.forEach((item)=>{
+        reytinq.innerHTML+=`
+        <div class="users" >
+        <img src="/icons/crown-icon.png" alt="">
+        <p class="username">${item.fullName}</p>
+        <p class="points">${item.point}</p>
+        <p class="date">${item.date}</p>
+        </div>
+        `;
+    })
+})
 
 //dark mode
 
@@ -51,6 +51,7 @@ toDark.addEventListener("click", ()=>{
         span.forEach((item)=>{
             item.classList.toggle("toDarkMode");
         })
+        reytinq.classList.toggle("toDarkMode");
     },250)
     
 })

@@ -1,10 +1,10 @@
 *{
     font-family: Manrope;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
+    /* transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear; */
 }
 
 body{
@@ -20,7 +20,7 @@ body{
     
 }
 .darhTheme{
-    
+    color: #FFF !important;
     background-color: #3B323B;
     
 }
@@ -29,7 +29,9 @@ body{
     
 }
 .darhTheme .image{
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    width: 426px;
+    height: 270px;
     content: url("/icons/Tiny\ students\ learning\ online\ lesson\ via\ laptop\ 1\ \(no\ bg\).png");
 }
 .darhTheme .users{
@@ -129,6 +131,10 @@ li .selected{
     transition: all 0.1s ease-in-out;
     padding-left: 25px;
     color: var(--white);
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 li .selected .icon-Dashboard{
@@ -320,8 +326,8 @@ header .user p:hover{
 }
 .daha-etrafli-imtahan-page .image img{
     width: 426px;
-    height: 284px;
-    margin-top: 15px;
+    height: 270px;
+    /* margin-top: 15px; */
 }
 .about-test{
     width: 784px;
@@ -378,10 +384,13 @@ header .user p:hover{
     display: flex;
 }
 .reytinq .just-texts h2{
-    color: var(--black, #2B2A2A);
+    color: var(--black);
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
+}
+.toDarkMode .just-texts h2{
+    color: var(--white) !important;
 }
 .red-box{
     width: 450px;
@@ -391,13 +400,16 @@ header .user p:hover{
     /* flex-grow: 1; */
 }
 .red-box p{
-    color: var(--red, #D44949);
+    color:  #D44949;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 7px;
 }
 .red-box p:nth-child(2){
     margin-left: 107px;
+}
+.toDarkMode .just-texts .red-box p{
+    color: var(--white) !important;
 }
 .users{
     margin-bottom: 15px;
@@ -435,10 +447,10 @@ header .user p:hover{
   } */
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  /* ::-webkit-scrollbar-thumb {
       background: var(--purple); 
       border-radius: 10px;
-    }
+    } */
     
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
