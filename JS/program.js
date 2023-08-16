@@ -45,11 +45,26 @@ function getData(){
                         <a href="#" class="dark-card-btn">Daha etrafli</a>
                     </div>
                 </div>
+<<<<<<< HEAD
+
+                <p class="card-title">${element.examName}</p>
+                <p class="right">${element.price}</p>
+                <div class="card-buttons">
+                    <a href="#" class="purple-card-btn">Teste basla</a>
+                    <a href="#" class="dark-card-btn">Daha etrafli</a>
+                </div>
+            </div>
+            `
+          }})
+    })
+}
+=======
                 `
             })
         })
     }
         
+>>>>>>> a1104412ef3bf92db658d58dd98745329de51190
 
 
 getData();

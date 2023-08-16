@@ -94,73 +94,18 @@ let date = document.querySelector("#date");
 let hour = document.querySelector("#hour");
 let minute = document.querySelector("#minute");
 let second = document.querySelector("#second");
-let monthName = document.querySelector("#monthName");
-let fullYear = document.querySelector("#fullYear");
 
-setInterval(showTime, 1000);
-function showTime() {
+setInterval(() => {
+  todayDate = new Date();
+
   day.innerHTML = todayDate.getDate();
-  if (todayDate.getMonth() < 10) {
-    month.innerHTML = "0" + todayDate.getMonth();
-  } else {
-    month.innerHTML = todayDate.getMonth();
-  }
+  month.innerHTML = (todayDate.getMonth() < 9 ? "0" : "") + (todayDate.getMonth() + 1);
   year.innerHTML = todayDate.getFullYear();
-  switch (todayDate.getDay()) {
-    case 1:
-      {
-        date.innerHTML = "Monday";
-      }
-      break;
-    case 2:
-      {
-        date.innerHTML = "Tuesday";
-      }
-      break;
-    case 3:
-      {
-        date.innerHTML = "Wednesday";
-      }
-      break;
-    case 4:
-      {
-        date.innerHTML = "Thursday";
-      }
-      break;
-    case 5:
-      {
-        date.innerHTML = "Friday";
-      }
-      break;
-    case 6:
-      {
-        date.innerHTML = "Saturday";
-      }
-      break;
-    case 0:
-      {
-        date.innerHTML = "Sunday";
-      }
-      break;
-  }
 
-  if (todayDate.getHours() < 10) {
-    hour.innerHTML = "0" + todayDate.getHours();
-  } else {
-    hour.innerHTML = todayDate.getHours();
-  }
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  date.innerHTML = daysOfWeek[todayDate.getDay()];
 
-  if (todayDate.getMinutes() < 10) {
-    minute.innerHTML = "0" + todayDate.getMinutes();
-  } else {
-    minute.innerHTML = todayDate.getMinutes();
-  }
-
-  if (todayDate.getSeconds() < 10) {
-    second.innerHTML = "0" + todayDate.getSeconds();
-  } else {
-    second.innerHTML = todayDate.getSeconds();
-  }
-  
-}
-showTime();
+  hour.innerHTML = (todayDate.getHours() < 10 ? "0" : "") + todayDate.getHours();
+  minute.innerHTML = (todayDate.getMinutes() < 10 ? "0" : "") + todayDate.getMinutes();
+  second.innerHTML = (todayDate.getSeconds() < 10 ? "0" : "") + todayDate.getSeconds();
+});
