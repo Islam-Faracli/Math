@@ -1,10 +1,6 @@
 *{
     font-family: Manrope;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
 }
 
 body{
@@ -85,10 +81,6 @@ li .options:hover{
     padding-left: 15px;
     background-color: #7f75ea;
     color: var(--white);
-    -webkit-transition: all 0.3s ease-in-out !important;
-    -moz-transition: all 0.3s ease-in-out !important;
-    -ms-transition: all 0.3s ease-in-out !important;
-    -o-transition: all 0.3s ease-in-out !important;
 }
 li #options-fifth{
     padding-left: 25px;
@@ -188,11 +180,11 @@ aside span{
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
     background-color: var(--white);
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 .toDarkMode{
     color: var(--white) !important;
@@ -204,14 +196,11 @@ aside span{
     background-color: var(--purple);
 }
 .toDarkMode + .mode-box .mode-circle{
-    background-color: var(--black);
+
 }
 .toDarkMode .mode-circle{
-    transform: translateX(34px);
-    -webkit-transform: translateX(34px);
-    -moz-transform: translateX(34px);
-    -ms-transform: translateX(34px);
-    -o-transform: translateX(34px);
+    transform: translateX(34px);    
+    background-color: var(--black);
 }
 /* header */
 

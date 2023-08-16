@@ -1,5 +1,5 @@
 let modeChanger = document.querySelector('#mode-case');
-
+let allptexts = document.querySelectorAll("p:not(.header-second-part)");
 let alllabeltexts = document.querySelectorAll('label');
 let headerpart = document.querySelector('header');
 let formpart = document.querySelector('form');
@@ -8,51 +8,6 @@ let iconleft = document.querySelector('#icon-left-white');
 let icondown = document.querySelector('#icon-down-white');
 let textboxes = document.getElementsByClassName('details');
 let modecircle = document.querySelector('#mode-circle');
-let barcase = document.querySelector('#bar');
-let usericon = document.querySelector('#telebe-adi-icon');
-<<<<<<< HEAD
-let options = document.querySelectorAll('.options');
-let question = document.querySelector('#question');
-
-function getData(){
-    fetch("../db/questions.json")
-    .then(res => res.json())
-    .then(data => {
-        for(let user of data){
-            question.innerHTML += `
-            <div id="separate-ques">
-                <p id="onepoint">(1 point)</p>
-                <p id="question-part">${user.question}</p>
-                <p>Düzgün variantı seçin</p>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer1}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer2}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer3}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer4}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer5}</p>
-                </div>
-            </div>
-            `
-        }
-    })
-}
-
-=======
->>>>>>> a1104412ef3bf92db658d58dd98745329de51190
-
 
 modeChanger.addEventListener('click', () => {
     
@@ -60,8 +15,6 @@ modeChanger.addEventListener('click', () => {
         modeChanger.classList.replace('darktolight', 'lighttodark');
         
         setTimeout(() => {
-            let options = document.querySelectorAll('.options');
-            let allptexts = document.querySelectorAll("p:not(.header-second-part)");
         for (let i = 0; i < allptexts.length; i++) {
             allptexts[i].style.color = 'white';
         }
@@ -71,9 +24,6 @@ modeChanger.addEventListener('click', () => {
         for (let i = 0; i < textboxes.length; i++) {
             textboxes[i].style.background = '#393139';
         }
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#393535'
-        }
         headerpart.style.backgroundColor = '#2A2A2A';
         formpart.style.backgroundColor = '#393139'
         mainpart.style.backgroundColor = '#302B2B';
@@ -81,9 +31,6 @@ modeChanger.addEventListener('click', () => {
         icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
         modeChanger.style.background = 'var(--purple)'
         modecircle.style.background = '#302B2B'
-        barcase.style.backgroundColor = '#5F5E5E';
-        usericon.style.background = 'url(../ICONS/userwhite.svg)'
-        
     }, 250);
     }
 
@@ -107,11 +54,6 @@ modeChanger.addEventListener('click', () => {
         icondown.style.background = 'url(../ICONS/arrow-down.svg)'
         modeChanger.style.background = '#E2E2E2';
         modecircle.style.background = '#FFF'
-        barcase.style.backgroundColor = 'var(--light-2)';
-        usericon.style.background = 'url(../ICONS/user.svg)'
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#FFF'
-        }
     }, 250);
     }
 
@@ -135,13 +77,6 @@ modeChanger.addEventListener('click', () => {
         icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
         modeChanger.style.background = 'var(--purple)'
         modecircle.style.background = '#302B2B'
-        barcase.style.backgroundColor = '#5F5E5E';
-        usericon.style.background = 'url(../ICONS/userwhite.svg)'
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#393535'
-        }
     }, 250);
     }
 });
-
-getData();

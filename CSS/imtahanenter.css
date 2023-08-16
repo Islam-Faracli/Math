@@ -9,7 +9,7 @@
     list-style: none;
 }
 form {
-    height: auto;
+    height: 100vh;
     background-color: #F6F6F6;
     display: flex;
     align-items: center;
@@ -45,6 +45,9 @@ header {
     display: flex;
     align-items: center;
 }
+.header-second-part {
+    color: var(--light); !important;
+}
 #img-circle {
     width: 53px;
     height: 53px;
@@ -69,7 +72,7 @@ header {
 
 main {
     width: 86.4%;
-    height: auto !important;
+    height: 100vh;
     margin-top: 40px;
     margin-bottom: 27px;
     border-radius: 14px;
@@ -78,8 +81,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 77px 50px 77px;
 }
+
 #main-header {
     display: flex;
     align-items: end;
@@ -88,20 +91,18 @@ main {
 #main-header > :nth-child(1) {
     font-size: 24px;
     font-weight: 700;
-    color: var(--black); 
+    color: var(--black);
 }
 #main-header > :nth-child(2) {
     font-size: 20px;
     font-weight: 700;
-    color: var(--light) !important;
+    color: var(--light);
 }
 #exam-details {
     display: flex;
     justify-content: space-between;
     gap: 65px;
     margin-top: 40px;
-    position: relative;
-    margin-bottom: 24px
 }
 #exam-details > span > label {
     color: var(--black);
@@ -120,51 +121,49 @@ main {
     background: #FFF;
     margin-top: 10px;
 }
-#bar {
-    margin-top: 15px;
-    width: 824px;
-    border-radius: 10px;
-    height: 10px;
-    background-color: var(--light-2);
-    margin-bottom: 50px;
-}
-#bar div{
-    width: 20%;
-    height: 10px;
-    border-radius: 10px;
-    background-color: var(--purple);
-}
-.details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#name-part{
-    display: flex;
-    font-size: 20px;
-    gap: 5px;
-}
 #telebe-adi {
-    width: 800px;
-}
-#telebe-adi-icon {
-    background: url(../ICONS/user.svg);
-    background-size: cover !important;
-    width: 26px;
-    height: 26px;
+    width: 326px;
 }
 #imtahan-vaxti {
-    width: 300px;
+    width: 156px;
 }
-#imtahan-vaxti p:nth-child(1) {
-    font-size: 18px;
+#sual-sayi {
+    width: 156px;
 }
-#imt-vaxt-icon {
-    background: url(../ICONS/timer.svg);
+#main-middle-img{
+    margin-top: 35px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+    background: url(../IMAGES/pp.jpg);
     background-size: cover;
-    width: 25px;
-    height: 25px;
 }
+#main-text {
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 400px;
+}
+#exam-start {
+    margin-top: 20px;
+    display: flex;
+    width: 180px;
+    height: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--purple);
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
 #mode-changer {
     display: flex;
     position: absolute;
@@ -227,61 +226,3 @@ main {
         padding-left: 4px;
     }
 }
-
-#question{
-    width: 100%;
-    height: max-content;
-    position: relative;
-    margin-bottom: 50px;
-}
-#onepoint {
-    position: absolute;
-    right: 0;
-}
-#separate-ques{
-    margin-top: 50px;
-}
-#question-part 
-{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-#question p:nth-child(3) {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: var(--light) !important
-}
-#next-page {
-    margin-top: 20px;
-    display: flex;
-    width: 180px;
-    height: 50px;
-    padding: 15px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: var(--purple);
-    border: 0;
-    outline: 0;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-}
-
-.options {
-    cursor: pointer;
-    font-size: 17px;
-    display: flex;
-    height: 58px;
-    border-radius: 10px;
-    border: 1px solid var(--strok);
-    padding: 18px;
-    width: 70%;
-    margin-bottom: 15px;
-    gap: 5px;
-    align-items: center;
-    transition: background-color 0.25s, color 0.25s;
-}
-

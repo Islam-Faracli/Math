@@ -94,113 +94,18 @@ let date = document.querySelector("#date");
 let hour = document.querySelector("#hour");
 let minute = document.querySelector("#minute");
 let second = document.querySelector("#second");
-let monthName = document.querySelector("#monthName");
-let fullYear = document.querySelector("#fullYear");
 
-// setInterval(showTime, 1000);
+setInterval(() => {
+  todayDate = new Date();
 
   day.innerHTML = todayDate.getDate();
-  if (todayDate.getMonth() < 10) {
-    month.innerHTML = "0" + todayDate.getMonth();
-  } else {
-    month.innerHTML = todayDate.getMonth();
-  }
+  month.innerHTML = (todayDate.getMonth() < 9 ? "0" : "") + (todayDate.getMonth() + 1);
   year.innerHTML = todayDate.getFullYear();
-  switch (todayDate.getDay()) {
-    case 1:
-      {
-        date.innerHTML = "Monday";
-      }
-      break;
-    case 2:
-      {
-        date.innerHTML = "Tuesday";
-      }
-      break;
-    case 3:
-      {
-        date.innerHTML = "Wednesday";
-      }
-      break;
-    case 4:
-      {
-        date.innerHTML = "Thursday";
-      }
-      break;
-    case 5:
-      {
-        date.innerHTML = "Friday";
-      }
-      break;
-    case 6:
-      {
-        date.innerHTML = "Saturday";
-      }
-      break;
-    case 0:
-      {
-        date.innerHTML = "Sunday";
-      }
-      break;
-  }
-function showTime() {
-  if (todayDate.getHours() < 10) {
-    hour.innerHTML = "0" + todayDate.getHours();
-  } else {
-    hour.innerHTML = todayDate.getHours();
-  }
 
-  if (todayDate.getMinutes() < 10) {
-    minute.innerHTML = "0" + todayDate.getMinutes();
-  } else {
-    minute.innerHTML = todayDate.getMinutes();
-  }
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  date.innerHTML = daysOfWeek[todayDate.getDay()];
 
-  if (todayDate.getSeconds() < 10) {
-    second.innerHTML = "0" + todayDate.getSeconds();
-  } else {
-    second.innerHTML = todayDate.getSeconds();
-  }
-  
-}
-// showTime();
-setInterval(showTime, 1000);
- //internetden tapdigim
-// Defining showTime funcion
-// function showTime() {
-//     // Getting current time and date
-//     let time = new Date();
-//     let hour = time.getHours();
-//     let min = time.getMinutes();
-//     let sec = time.getSeconds();
-//     am_pm = "AM";
- 
-//     // Setting time for 12 Hrs format
-//     if (hour >= 12) {
-//         if (hour > 12) hour -= 12;
-//         am_pm = "PM";
-//     } else if (hour == 0) {
-//         hr = 12;
-//         am_pm = "AM";
-//     }
- 
-//     hour =
-//         hour < 10 ? "0" + hour : hour;
-//     min = min < 10 ? "0" + min : min;
-//     sec = sec < 10 ? "0" + sec : sec;
- 
-//     let currentTime =
-//         hour +
-//         ":" +
-//         min +
-//         ":" +
-//         sec +
-//         am_pm;
- 
-//     // Displaying the time
-//     document.getElementById(
-//         "clock"
-//     ).innerHTML = currentTime;
-// }
- 
-showTime();
+  hour.innerHTML = (todayDate.getHours() < 10 ? "0" : "") + todayDate.getHours();
+  minute.innerHTML = (todayDate.getMinutes() < 10 ? "0" : "") + todayDate.getMinutes();
+  second.innerHTML = (todayDate.getSeconds() < 10 ? "0" : "") + todayDate.getSeconds();
+});
