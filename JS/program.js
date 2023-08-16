@@ -8,6 +8,7 @@ let searchB = document.querySelector(".searchB");
 let searchW = document.querySelector(".searchW")
 
 let cards = [
+
     `<li class="aside-link-item"><a href=""><img src="./icons/dashboard-icon-white.png" alt="">Dashboard</a></li>
     <li class="aside-link-item"><a class="active" href="#"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
     <li class="aside-link-item"><a href="../videos.html"><img src="./icons/video-play-icon-white.png" alt="">Onlayn videolar</a></li>
