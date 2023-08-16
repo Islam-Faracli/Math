@@ -253,19 +253,6 @@ main {
     margin-bottom: 20px;
     color: var(--light) !important
 }
-/* .options {
-    cursor: pointer;
-    font-size: 17px;
-    display: flex;
-    height: 58px;
-    border-radius: 10px;
-    border: 1px solid var(--strok);
-    padding: 18px;
-    width: 70%;
-    margin-bottom: 15px;
-    gap: 5px;
-    align-items: center;
-} */
 #next-page {
     margin-top: 20px;
     display: flex;
@@ -295,10 +282,6 @@ main {
     margin-bottom: 15px;
     gap: 5px;
     align-items: center;
-    transition: background-color 0.25s, color 0.25s; /* Add transition */
+    transition: background-color 0.25s, color 0.25s;
 }
 
-.dark-mode .options {
-    background: #393535;
-    color: white;
-}

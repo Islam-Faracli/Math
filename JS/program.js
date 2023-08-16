@@ -6,7 +6,7 @@ let toggleBtn = document.querySelector("#dark-mode");
 function getData(){
     fetch("../db/Exams.json")
     .then(res => res.json())
-
+    .then(data => {
         data.forEach(element => {
         for(let user of data){
            
@@ -28,7 +28,7 @@ function getData(){
                 </div>
             </div>
             `
-        })
+          }})
     })
 }
 

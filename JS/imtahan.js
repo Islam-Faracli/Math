@@ -11,6 +11,45 @@ let modecircle = document.querySelector('#mode-circle');
 let barcase = document.querySelector('#bar');
 let usericon = document.querySelector('#telebe-adi-icon');
 let options = document.querySelectorAll('.options');
+let question = document.querySelector('#question');
+
+function getData(){
+    fetch("../db/questions.json")
+    .then(res => res.json())
+    .then(data => {
+        for(let user of data){
+            question.innerHTML += `
+            <div id="separate-ques">
+                <p id="onepoint">(1 point)</p>
+                <p id="question-part">${user.question}</p>
+                <p>Düzgün variantı seçin</p>
+                <div class="options">
+                    <input name="answer" type="radio">
+                    <p id="answer-text">${user.answer1}</p>
+                </div>
+                <div class="options">
+                    <input name="answer" type="radio">
+                    <p id="answer-text">${user.answer2}</p>
+                </div>
+                <div class="options">
+                    <input name="answer" type="radio">
+                    <p id="answer-text">${user.answer3}</p>
+                </div>
+                <div class="options">
+                    <input name="answer" type="radio">
+                    <p id="answer-text">${user.answer4}</p>
+                </div>
+                <div class="options">
+                    <input name="answer" type="radio">
+                    <p id="answer-text">${user.answer5}</p>
+                </div>
+            </div>
+            `
+        }
+    })
+}
+
+
 
 modeChanger.addEventListener('click', () => {
     
@@ -100,43 +139,4 @@ modeChanger.addEventListener('click', () => {
     }
 });
 
-let question = document.querySelector('#question');
-
-function getData(){
-    fetch("../db/questions.json")
-    .then(res => res.json())
-    .then(data => {
-        for(let user of data){
-            question.innerHTML += `
-            <div id="separate-ques">
-                <p id="onepoint">(1 point)</p>
-                <p id="question-part">${user.question}</p>
-                <p>Düzgün variantı seçin</p>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer1}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer2}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer3}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer4}</p>
-                </div>
-                <div class="options">
-                    <input name="answer" type="radio">
-                    <p id="answer-text">${user.answer5}</p>
-                </div>
-            </div>
-            `
-        }
-    })
-}
-
 getData();
-

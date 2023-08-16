@@ -4,6 +4,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 90px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .logo{
@@ -17,6 +19,7 @@ nav{
 
 .nav-link-item{
     margin-right: 68px;
+    
 }
 
 .btn-outline{
@@ -88,7 +91,11 @@ header{
     height: 258px;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .card img{
@@ -100,7 +107,10 @@ header{
 }
 
 .card .buttons{
-    margin-top: 33px;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 10px;
 }
 
 /*steps*/
@@ -124,10 +134,11 @@ header{
 .icons{
     display: flex;
     justify-content: space-evenly;
+    color: var(--light);
 }
 
 .icon-item p{
-    color: var(--gray);
+    color: var(--light);
     margin-top: 25px;
 }
 
@@ -162,7 +173,7 @@ header{
 }
 
 .intro-info:first-child p{
-    color: var(--gray);
+    color: var(--light);
     margin-bottom: 11px;
 }
 
@@ -199,6 +210,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.student-card{
+    cursor: pointer;
 }
 
 .student-img{
