@@ -24,9 +24,14 @@ body{
     background-color: #3B323B;
     
 }
-.darhTheme .daha-etrafli-imtahan-page{
-    background-color: #302B2B;
-    
+.darhTheme .scoreBoard-page{
+    background-color: #302B2B; 
+}
+.darhTheme .type-list{
+    background-color: #302B2B !important; 
+}
+.darhTheme .type-list img{
+    content: url(/icons/arrow-down-white.png);
 }
 .darhTheme .image{
     /* margin-top: 15px; */
@@ -99,7 +104,7 @@ li .options:hover{
     -ms-transition: all 0.3s ease-in-out !important;
     -o-transition: all 0.3s ease-in-out !important;
 }
-li #options-second{
+li #options-fourth{
     padding-left: 25px;
     background-color: #7f75ea;
     color: var(--white);
@@ -140,13 +145,13 @@ li .selected{
 li .selected .icon-Dashboard{
     content:url(/icons/dashboard-icon-white.png);
 }
-li .icon-Imtahan{
+li .selected .icon-Imtahan{
     content:url(/icons/imtahanlar-icon-white.png);
 }
 li .selected .icon-onlinevideos{
     content:url(/icons/video-play-icon-white.png);
 }
-li .selected .icon-scoreboard{
+li .icon-scoreboard{
     content:url(/icons/chart-icon-white.png);
 }
 li .selected .icon-haqqimizda{
@@ -228,7 +233,6 @@ aside span{
 }
 
 /* header */
-
 header{
     display: flex;
     width: 100%;
@@ -276,9 +280,34 @@ header .user p:hover{
 
 /* main */
 
-.daha-etrafli-imtahan-page{
+.type-box{
+    margin: 20px 30px 0 30px;
+    position: relative;
+    height: 40px;
+}
+.type-box .type-list{
+    padding: 0 15px;
+    width: 163px;
+    height: 40px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display:flex ;
+    gap: 80px;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.type-box .type-list span{
+    color: var(--light);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.scoreBoard-page{
     margin: 30px;
-    padding: 0 25px 15px 40px;
+    padding: 40px 25px 15px 40px;
     background-color: var(--white);
     box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
     overflow: auto;
@@ -287,169 +316,65 @@ header .user p:hover{
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
-    height: calc(100vh - 162px);
-}
-.container2{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.buraxilis-texts{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 40px;
-}
-.buraxilis-texts .info-about-exam{
-    width: 407px;
-    color: var(--light);
-    font-size: 16px;
-    font-weight: 500;
-    
-}
-.buraxilis-texts .free{
-    color: #D44949;
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: 700;
-}
-.buraxilis-texts .start-test{
-    border-radius: 8px;
-    width: 130px;
-    height: 43px;
-    border: none;
-    background-color: var(--purple);
-    color: var(--white);
-}
-.buraxilis-texts .start-test:hover{
-    cursor: pointer;
-}
-.daha-etrafli-imtahan-page .image img{
-    width: 426px;
-    height: 270px;
-    /* margin-top: 15px; */
-}
-.about-test{
-    width: 784px;
-    height: 160px;
-    display: flex;
-    justify-content: space-between;
-    margin: 40px auto;
-}
-.circle{
-    background-color: var(--purple);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 96px;
-    height: 96px;
-    border-radius: 59px;
-    -webkit-border-radius: 59px;
-    -moz-border-radius: 59px;
-    -ms-border-radius: 59px;
-    -o-border-radius: 59px;
-}
-.content .circle p{
-    color: var(--white) !important;
-    font-weight: 500 !important;
-    font-size: 15px !important;
-}
-.line{
-    width: 193px;
-    height: 2px;
-    border-top: dashed 2px #8A7E7E;
-    align-self: center;
-}
-.exam-starts, .time, .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.exam-starts p:nth-child(1), .time p:nth-child(1), .content p:nth-child(1){
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 700;
-} 
-.exam-starts p:nth-child(3), .time p:nth-child(3), .content p:nth-child(3){
-    color: var(--light);
-    font-size: 14px;
-    font-weight: 700;
+    overflow: auto;
+    height: calc(100vh - 225px);
 }
 
-/* Reytinq */
-
-.reytinq .just-texts{
-    width: 100%;
+.info-users{
     display: flex;
-}
-.reytinq .just-texts h2{
-    color: var(--black);
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-.toDarkMode .just-texts h2{
-    color: var(--white) !important;
-}
-.red-box{
-    width: 450px;
-    display: flex;
-    margin-left: 500px;
-    align-items: flex-end;
-    /* flex-grow: 1; */
-}
-.red-box p{
-    color:  #D44949;
-    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--light);
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 7px;
+    position: relative;
 }
-.red-box p:nth-child(2){
-    margin-left: 107px;
+.info-users p:nth-child(2){
+    /* margin-right: 565px; */
+    position: absolute;
+    right: 280px;
 }
-.toDarkMode .just-texts .red-box p{
-    color: var(--white) !important;
+.info-users p:nth-child(3){
+    /* margin-right: 130px; */
+    position: absolute;
+    right:80px;
 }
 .users{
-    margin-bottom: 15px;
+    padding-left: 9px;
     display: flex;
+    height: 86px;
     align-items: center;
-    padding: 0 62px 0 30px;
-    width: 100%;
-    height: 62px;
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    position: relative;
 }
-.users img{
-    margin-right: 20px;
-}
-.users p:nth-child(2){
-    margin-right: 400px;
-    width: 150px;
-}
-.users p:nth-child(3){
-    margin-right: 100px;
+.users .user-photo{
+    width: 58px;
+    height: 58px;
+    margin-right: 30px;
 }
 
-/* scrollbar */
-
-/* width */
+.users .points{
+    position: absolute;
+    right: 300px;
+}
+.users .grade{
+    position: absolute;
+    right:80px;
+}
 ::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  /* Track */
-  /* ::-webkit-scrollbar-track {
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
-  } */
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-      background: var(--purple); 
-      border-radius: 10px;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--purple); 
+    border-radius: 10px;
     }
     
     /* Handle on hover */
