@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/imtahan.css">
+    <link rel="stylesheet" href="./CSS/imtahan.css"> 
     <link rel="stylesheet" href="./CSS/color.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,48 +11,51 @@
     <title>Imtahan</title>
 </head>
 <body>
-<form>
-    <header id="header">
-        <div id="first-part">
-            <div id="icon-left-white"></div>
-            <p>İmtahan</p>
-        </div>
-        <div id="last-part">
-            <div id="img-circle"></div>
-            <p>username@gmail.com</p>
-            <div id="icon-down-white"></div>
-        </div>
-    </header>
-
-    <main>
-        <div id="mode-changer">
-            <p>Dark mode</p>
-            <div id="mode-case"><div id="mode-circle"></div></div>
-        </div>
-
-        <span id="main-header">
-            <p>İmtahan / </p><p class="header-second-part">9-cu sinif buraxılış</p>
-        </span>
-        <div id="exam-details">
-            <span>
-                <label for="telebe-adi">Tələbə adı</label>
-                <div class="details" id="telebe-adi"><p>Fərəcli İslam</p></div>
+    <form>
+        <header id="header">
+            <div id="first-part">
+                <div id="icon-left-white"></div>
+                <p>İmtahan</p>
+            </div>
+            <div id="last-part">
+                <div id="img-circle"></div>
+                <p>username@gmail.com</p>
+                <div id="icon-down-white"></div>
+            </div>
+        </header>
+    
+        <main>
+            <div id="mode-changer">
+                <p>Dark mode</p>
+                <div id="mode-case"><div id="mode-circle"></div></div>
+            </div>
+    
+            <span id="main-header">
+                <p>İmtahan / </p><p>9-cu sinif buraxılış</p>
             </span>
-            <span>
-                <label for="imtahan-vaxti">İmtahan vaxtı</label>
-                <div class="details" id="imtahan-vaxti"><p>1 saat</p></div>
-            </span>
-            <span>
-                <label for="sual-sayi">Sualların sayı</label>
-                <div class="details" id="sual-sayi"><p>25</p></div>
-            </span>
-        </div>
-        <div id="main-middle-img"></div>
-        <p id="main-text">Məlumatlar doğrudursa imtahana başlaya bilərsiniz, başladıqdan sonra əvvəlki səhifəyə qayıda bilməyəcəksiniz.</p>
-        <button id="exam-start">İmtahana başla</button>
-    </main>
-</form>
 
+            <div id="exam-details">
+                <span>
+                    <div class="details" id="telebe-adi">
+                        <div id="name-part">
+                            <p>Tələbə adı:</p>
+                            <p class="fullname">Fərəcli İslam</p>
+                        </div>
+                        <div id="telebe-adi-icon"></div>
+                    </div>
+                </span>
+                <span>
+                    <div class="details" id="imtahan-vaxti">
+                        <p>İmtahan vaxtı:</p>
+                        <p>59:59</p>
+                        <div id="imt-vaxt-icon"></div>
+                    </div>
+                </span>
+            </div>
+            <p>Səhifə 1 / 5</p>
+            <div id="bar"><div></div></div>
+            <div id="question"></div>
+            <button id="next-page">Növbəti səhifə</button>
     <script src="./JS/imtahan.js"></script>
 </body>
 </html>

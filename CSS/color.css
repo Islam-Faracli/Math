@@ -5,11 +5,14 @@
     --footer-black: #30333d;
     --aside-color: #2a2a2a;
     --background-color: #3B323B;
-    --black: #2B2A2A;
+    --text-color: #fff;
     --light: #8A7E7E;
+    --black: #2B2A2A;
+    --light-2: #E2E2E2;
     --strok: #D2D2D2;
     --white: #FFFFFF;
 }
+
 .dark-theme{
     --aside-color: #fff;
     --text-color: #2B2A2A;
