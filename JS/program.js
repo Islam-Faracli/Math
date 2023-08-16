@@ -8,17 +8,18 @@ let searchB = document.querySelector(".searchB");
 let searchW = document.querySelector(".searchW")
 
 let cards = [
-    `<li class="aside-link-item"><a href="#"><img src="./icons/dashboard-icon-white.png" alt="">Dashboard</a></li>
-    <li class="aside-link-item"><a class="active" href="/program.html"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
-    <li class="aside-link-item"><a href="/videos.html"><img src="./icons/video-play-icon-white.png" alt="">Onlayn videolar</a></li>
-    <li class="aside-link-item"><a href="/scoreBoard.html"><img src="./icons/chart-icon-white.png" alt="">ScoreBoard</a></li>
-    <li class="aside-link-item"><a href="/haqqimizda.html"><img src="./icons/stickynote.png" alt="">Haqqımızda</a></li>`,
+
+    `<li class="aside-link-item"><a href=""><img src="./icons/dashboard-icon-white.png" alt="">Dashboard</a></li>
+    <li class="aside-link-item"><a class="active" href="#"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
+    <li class="aside-link-item"><a href="../videos.html"><img src="./icons/video-play-icon-white.png" alt="">Onlayn videolar</a></li>
+    <li class="aside-link-item"><a href="../scoreBoard.html"><img src="./icons/chart-icon-white.png" alt="">ScoreBoard</a></li>
+    <li class="aside-link-item"><a href="../haqqimizda.html"><img src="./icons/stickynote.png" alt="">Haqqımızda</a></li>`,
 
     `<li class="aside-link-item"><a href="#"><img src="./icons/dasblack.svg" alt="">Dashboard</a></li>
-    <li class="aside-link-item"><a class="active" href="/program.html"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
-    <li class="aside-link-item"><a href="/videos.html"><img src="./icons/icon Onlinevideos.png" alt="">Onlayn videolar</a></li>
-    <li class="aside-link-item"><a href="/scoreBoard.html"><img src="./icons/icon Scoreboard.png" alt="">ScoreBoard</a></li>
-    <li class="aside-link-item"><a href="/haqqimizda.html"><img src="./icons/icon Haqqimizda.png" alt="">Haqqımızda</a></li>`
+    <li class="aside-link-item"><a class="active" href="#"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
+    <li class="aside-link-item"><a href="../videos.html"><img src="./icons/icon Onlinevideos.png" alt="">Onlayn videolar</a></li>
+    <li class="aside-link-item"><a href="../scoreBoard.html"><img src="./icons/icon Scoreboard.png" alt="">ScoreBoard</a></li>
+    <li class="aside-link-item"><a href="../haqqimizda.html"><img src="./icons/icon Haqqimizda.png" alt="">Haqqımızda</a></li>`
 ]
 
 menu.innerHTML = cards[0];
@@ -41,8 +42,8 @@ function getData(){
                     <p class="card-title">${element.examName}</p>
                     <p class="right">${element.price}</p>
                     <div class="card-buttons">
-                        <a href="#" class="purple-card-btn">Teste basla</a>
-                        <a href="#" class="dark-card-btn">Daha etrafli</a>
+                        <a href="../imtahanenter.html" class="purple-card-btn">Teste basla</a>
+                        <a href="../daha-etrafli.html" class="dark-card-btn">Daha etrafli</a>
                     </div>
                 </div>
                 `

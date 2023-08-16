@@ -226,3 +226,6 @@ main {
         padding-left: 4px;
     }
 }
+button a{
+    color: var(--white);
+}

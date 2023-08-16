@@ -93,11 +93,14 @@ li .options:hover{
     transition: all 0.3s ease-in-out !important;
     padding-left: 15px;
     background-color: #7f75ea;
-    color: var(--white);
+    color: var(--white) !important;
     -webkit-transition: all 0.3s ease-in-out !important;
     -moz-transition: all 0.3s ease-in-out !important;
     -ms-transition: all 0.3s ease-in-out !important;
     -o-transition: all 0.3s ease-in-out !important;
+}
+li .options:hover a{
+    color: var(--white) !important;
 }
 li #options-second{
     padding-left: 25px;
@@ -442,4 +445,7 @@ header .user p{
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: #7f75ea; 
+  }
+  .start-test a {
+    color: var(--white);
   }
