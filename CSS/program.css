@@ -66,7 +66,7 @@ aside h2{
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background-color: var(--aside-color);
+    background-color: var(--aside-color) !important;
     position: absolute;
     top: 4px;
     left: 5px;
@@ -216,4 +216,14 @@ form span{
 .card-buttons a:last-child{
     background-color: var(--aside-color);
     border: 1px solid var(--text-color);
+}
+.student-img {
+    border-radius: 8px;
+}
+.me-2 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
