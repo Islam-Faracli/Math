@@ -33,10 +33,18 @@ aside h2{
     color: var(--text-color);
     display: inline-block;
     margin-top: 57px;
+    transition: ease 0.4s;
 }
 
 .aside-link-item a img{
     margin-right: 13px;
+}
+
+.aside-link-item a:hover {
+    color: #fff;
+    background-color: var(--purple);
+    padding: 12px 30px;
+    border-radius: 12px;
 }
 
 .toggle{
