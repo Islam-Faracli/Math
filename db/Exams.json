@@ -1,6 +1,6 @@
 [
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "Abdullayev Sənan",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
@@ -14,7 +14,7 @@
             "price": "pulsuz"
         },
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "İlhamə Kazımova",
             "examName": "MİQ imtahanı",
             "questions": "50 sual",
@@ -28,7 +28,7 @@
             "price": "50 AZN"
         },
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "Alıyeva Lalə",
             "examName": "9-cu sinif buraxılış",
             "questions": "100 sual",
@@ -42,7 +42,7 @@
             "price": "20 AZN"
         },
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "Fərəcli İslam",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
@@ -56,7 +56,7 @@
             "price": "pulsuz"
         },
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "Cahangirov Tural",
             "examName": "9-cu sinif buraxılış",
             "questions": "100 sual",
@@ -70,7 +70,7 @@
             "price": "50 AZN"
         },
         {
-            "userImage": "../iMAGES/card-image.svg",
+            "userImage": "../iMAGES/Tiny.png",
             "fullName": "Ələkbərov Vüsal",
             "examName": "Master qəbul",
             "questions": "100 sual",
