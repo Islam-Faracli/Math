@@ -15,8 +15,8 @@ let cards = [
     <li class="aside-link-item"><a href="#"><img src="./icons/stickynote.png" alt="">Haqqımızda</a></li>`,
 
     `<li class="aside-link-item"><a href="#"><img src="./icons/dasblack.svg" alt="">Dashboard</a></li>
-    <li class="aside-link-item"><a class="active" href="#"><img src="./icons/icon Imtahan.png" alt="">İmtahanlar</a></li>
-    <li class="aside-link-item"><a href="#"><img src="./icons/video-play-icon-white.png" alt="">Onlayn videolar</a></li>
+    <li class="aside-link-item"><a class="active" href="#"><img src="./icons/imtahanlar-icon-white.png" alt="">İmtahanlar</a></li>
+    <li class="aside-link-item"><a href="#"><img src="./icons/icon Onlinevideos.png" alt="">Onlayn videolar</a></li>
     <li class="aside-link-item"><a href="#"><img src="./icons/icon Scoreboard.png" alt="">ScoreBoard</a></li>
     <li class="aside-link-item"><a href="#"><img src="./icons/icon Haqqimizda.png" alt="">Haqqımızda</a></li>`
 ]
