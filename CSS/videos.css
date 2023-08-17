@@ -123,7 +123,7 @@ form{
 }
 
 .search_input{
-    padding: 8px 253px 8px 10px;
+    padding: 8px 90px 8px 10px;
     border-radius: 10px;
     border: none;
     background-color: var(--aside-color);
