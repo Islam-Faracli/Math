@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoreboard</title>
-    <link rel="stylesheet" href="/CSS/scoreBoard.css">
-    <link rel="stylesheet" href="/CSS/color.css">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="./CSS/color.css">
+    <link rel="stylesheet" href="./CSS/videolar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>videolar</title>
 </head>
 <body>
     <aside>
@@ -31,9 +30,7 @@
                     </div>
                 </li>
             </a>
-
             <a href="./videos.html">
-
                 <li>
                     <div class="options" id="options-third" aria-selected="false">
                         <img src="/icons/icon Onlinevideos.png" alt="" class="icon-onlinevideos">
@@ -41,7 +38,7 @@
                     </div>
                 </li>
             </a>
-            <a href="/scoreBoard.html">
+            <a href="scoreBoard.html">
                 <li>
                     <div class="options" id="options-fourth" aria-selected="false">
                         <img src="/icons/icon Scoreboard.png" alt="" class="icon-scoreboard">
@@ -67,36 +64,31 @@
 
     </aside>
 
-    
     <div class="container">
         <header>
-            <h2>ScoreBoard</h2>
+            <h2>Onlayn Videolar</h2>
             <div class="user">
                 <img class="userPhoto" src="/iMAGES/pp.jpg" alt="">
                 <p>username@gmail.com</p>
                 <img class="arrow-down" src="/icons/arrow-down.svg" alt="">
             </div>
         </header>
-        <div class="type-box">
-            <div class="type-list">
-                <span>Növ</span>
-                <img src="/icons/arrow-down.svg" alt="">
+
+
+
+
+        
+        <main>
+            <div id="search-part">
+                <input type="text" id="search-text"></input>
+                <img src="./ICONS/search-b.svg" alt="">
             </div>
-        </div>
-        <div class="scoreBoard-page">
-            <div class="info-users">
-                <p>Name</p>
-                <p>Points</p>
-                <p>Grade</p>
+            <div id="videos-part">
+
             </div>
-            <div class="users">
-                <img src="/iMAGES/Frame 95.png" alt="" class="user-photo">
-                <p class="fullName">Abdullayev Senan</p>
-                <p class="points">25</p>
-                <p class="grade">Excellent</p>
-            </div>
-        </div>
+        </main>
     </div>
-    <script src="/JS/scoreBoard.js"></script>
+    
+    <script src="./JS/videolar.js"></script>
 </body>
 </html>
