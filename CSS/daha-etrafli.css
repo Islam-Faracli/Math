@@ -52,13 +52,13 @@ body{
 .darhTheme li .icon-haqqimizda{
     content:url(/icons/stickynote.png);
 }
-.mathQuiz h2{
+.mathQuiz{
     height: 110px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px !important;
+    font-size: 24px;
     font-weight: 700;
     color: var(--purple);
 }
@@ -385,7 +385,7 @@ header .user p{
 .red-box{
     width: 450px;
     display: flex;
-    margin-left: 500px;
+    margin-left: 535px;
     align-items: flex-end;
     /* flex-grow: 1; */
 }

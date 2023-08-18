@@ -1,6 +1,6 @@
 
 let users=document.querySelector(".scoreBoard-page");
-fetch("/db/scoreBoard.json")
+fetch("/db/students.json")
 .then((res)=>res.json())
 .then((data)=>{
     data.forEach((item)=>{
@@ -8,7 +8,7 @@ fetch("/db/scoreBoard.json")
         <div class="users">
             <img src="${item.userImage}" alt="" class="user-photo">
             <p class="fullName">${item.fullName}</p>
-            <p class="points">${item.point}</p>
+            <p class="points">${item.point}/100 Bal</p>
             <p class="grade">${item.grade}</p>
         </div>
         `;

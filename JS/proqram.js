@@ -6,25 +6,7 @@ options.forEach((element) => {
             items.classList.remove("selected");
         })
         element.classList.add("selected");
-    })
-})
-
-
-// Api part
-
-let reytinq=document.querySelector(".reytinq");
-fetch("/db/students.json")
-.then((response)=>response.json())
-.then((data)=>{
-    data.forEach((item)=>{
-        reytinq.innerHTML+=`
-        <div class="users" >
-        <img src="/icons/crown-icon.png" alt="">
-        <p class="username">${item.fullName}</p>
-        <p class="points">${item.point}/100 Bal</p>
-        <p class="date">${item.date}</p>
-        </div>
-        `;
+        
     })
 })
 
@@ -49,7 +31,6 @@ toDark.addEventListener("click", () => {
         span.forEach((item) => {
             item.classList.toggle("toDarkMode");
         });
-        reytinq.classList.toggle("toDarkMode");
 
         if (toDark.classList.contains("toDarkMode")) {
             localStorage.setItem("toDarkMode", true);
@@ -61,10 +42,10 @@ toDark.addEventListener("click", () => {
 
 window.onload = function () {
     let localusers = localStorage.getItem("toDarkMode");
-    if (localusers === "true") { // Check for string "true"
+    if (localusers === "true") {
         toDark.classList.toggle("toDarkMode");
         setTimeout(() => {
-            body.classList.toggle("darhTheme"); // Fixed typo here
+            body.classList.toggle("darhTheme");
             p.forEach((item) => {
                 item.classList.toggle("toDarkMode");
             });
@@ -74,7 +55,38 @@ window.onload = function () {
             span.forEach((item) => {
                 item.classList.toggle("toDarkMode");
             });
-            reytinq.classList.toggle("toDarkMode");
         }, 0);
     }
 };
+
+
+let videoPart = document.querySelector("#videos-part");
+
+function getData(){
+    fetch("../db/students.json")
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(element => {
+                videoPart.innerHTML += `
+                <div class="separate-video">
+                    <img src="../iMAGES/Tiny.png" alt="">
+                    <div id="video-title">
+                        <p>${element.questions}</p>
+                        <p>${element.fullName}</p>
+                    </div>
+                    <p>${element.examName}</p>
+                    <p>${element.price}</p>
+                    <div id="button-part">
+                    <button id="daha-etraf"><a href="../imtahanenter.html">Testə başla</a></button>
+                        <button id="daha-etraf"><a href="../daha-etrafli.html">Daha ətraflı</a></button>
+                    </div>
+                </div>
+                `
+            })
+        })
+    }
+        
+
+
+getData();
+

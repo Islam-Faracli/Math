@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoreboard</title>
-    <link rel="stylesheet" href="/CSS/scoreBoard.css">
-    <link rel="stylesheet" href="/CSS/color.css">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="./CSS/color.css">
+    <link rel="stylesheet" href="./CSS/proqram.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>Imtahanlar</title>
 </head>
 <body>
     <aside>
@@ -23,7 +22,7 @@
                     </div>
                 </li>
             </a>
-            <a href="/proqram.html">
+            <a href="#">
                 <li>
                     <div class="options" id="options-second" aria-selected="false">
                         <img src="/icons/icon Imtahan.png" alt="" class="icon-Imtahan">
@@ -66,26 +65,42 @@
     </aside>
 
     <div class="container">
-        
         <header>
-            <h2>Scoreboard</h2>
+            <h2>Onlayn Videolar</h2>
             <div class="user">
                 <img class="userPhoto" src="/iMAGES/pp.jpg" alt="">
                 <p>username@gmail.com</p>
                 <img class="arrow-down" src="/icons/arrow-down.svg" alt="">
             </div>
         </header>
-        <div class="type-box">
-            <div class="type-list">
-                <span>Növ</span>
-                <img src="/icons/arrow-down.svg" alt="">
-            </div>
-        </div>
-        
-        <div class="scoreBoard-page">
 
-        </div>
+
+
+
+
+        <main>
+
+            <div id="filter-zone">
+                <div id="search-part">
+                    <input placeholder="Search..." type="text" id="search-text">
+                    <img src="./ICONS/search-b.svg" alt="">
+                </div>
+                <div id="other-part">
+                    <input placeholder="Növ" type="text" id="nov-text">
+                    <img src="./ICONS/arrow-down.svg" alt="">
+                    <input placeholder="Qiymət" type="text" id="price-text">
+                    <img src="./ICONS/arrow-down.svg" alt="">
+                </div>
+            </div>
+
+
+            <div id="videos-part">
+                
+            </div>
+
+        </main>
     </div>
-    <script src="/JS/scoreBoard.js"></script>
+
+    <script src="./JS/proqram.js"></script>
 </body>
 </html>
