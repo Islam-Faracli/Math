@@ -42,8 +42,8 @@ function getData(){
                     <p class="card-title">${element.examName}</p>
                     <p class="right">${element.price}</p>
                     <div class="card-buttons">
-                        <a href="../imtahanenter.html" class="purple-card-btn">Teste basla</a>
-                        <a href="../daha-etrafli.html" class="dark-card-btn">Daha etrafli</a>
+                        <a href="/imtahanenter.html" class="purple-card-btn">Testə başla</a>
+                        <a href="/daha-etrafli.html" class="dark-card-btn">Daha etraflı</a>
                     </div>
                 </div>
                 `

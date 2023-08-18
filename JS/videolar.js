@@ -1,14 +1,14 @@
-let options=document.querySelectorAll(".options");
+// let options=document.querySelectorAll(".options");
 
-options.forEach((element) => {
-    element.addEventListener("click", ()=>{
-        options.forEach((items)=>{
-            items.classList.remove("selected");
-        })
-        element.classList.add("selected");
+// options.forEach((element) => {
+//     element.addEventListener("click", ()=>{
+//         options.forEach((items)=>{
+//             items.classList.remove("selected");
+//         })
+//         element.classList.add("selected");
         
-    })
-})
+//     })
+// })
 
 //dark mode
 
