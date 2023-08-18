@@ -67,13 +67,13 @@ window.onload = function () {
 let videoPart = document.querySelector("#videos-part");
 
 function getData(){
-    fetch("../db/videos.json")
+    fetch("../db/students.json")
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
                 videoPart.innerHTML += `
                 <div class="separate-video">
-                    <img src="./IMAGES/image 7.svg" alt="">
+                    <img src="./IMAGES/video.svg" alt="">
                     <div id="video-title">
                         <p>${element.questions}</p>
                         <p>${element.fullName}</p>

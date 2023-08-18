@@ -1,0 +1,152 @@
+[
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Fərəcli İslam",
+            "examName": "Qəbul imtahanı",
+            "questions": "90 sual",
+            "price": "20 manat",
+            "point": "43",
+            "date": "12/08/2020",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Rəcəbova Aysel",
+            "examName": "Buraxılış imtahanı",
+            "questions": "85 sual",
+            "price": "30 manat",
+            "point": "85",
+            "date": "08/11/2023",
+            "grade": "Excellent"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Quliyev Eşqin",
+            "examName": "9-cu sinif buraxılış imtahanı",
+            "questions": "80 sual",
+            "price": "30 manat",
+            "point": "35",
+            "date": "03/06/2021",
+            "grade": "Poor"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Şərifzadə Zahid",
+            "examName": "Qəbul imtahanı",
+            "questions": "90 sual",
+            "price": "40 manat",
+            "point": "93",
+            "date": "14/10/2018",
+            "grade": "Excellent"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Rəhimli Sənan",
+            "examName": "Buraxılış imtahanı",
+            "questions": "85 sual",
+            "price": "pulsuz",
+            "point": "59",
+            "date": "11/04/2022",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Mehdibəyli Rüfət",
+            "examName": "9-cu sinif buraxılış imtahanı",
+            "questions": "80 sual",
+            "price": "pulsuz",
+            "point": "50",
+            "date": "06/03/2019",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Kərimli Pərvin",
+            "examName": "Qəbul imtahanı",
+            "questions": "90 sual",
+            "price": "40 manat",
+            "point": "49",
+            "date": "04/12/2020",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Mustafazadə Dilbər",
+            "examName": "Buraxılış imtahanı",
+            "questions": "85 sual",
+            "price": "50 manat",
+            "point": "08",
+            "date": "05/09/2023",
+            "grade": "Very Poor"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Usubova Turanə",
+            "examName": "9-cu sinif buraxılış imtahanı",
+            "questions": "80 sual",
+            "price": "pulsuz",
+            "point": "41",
+            "date": "01/07/2021",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Cahangirov Tural",
+            "examName": "Qəbul imtahanı",
+            "questions": "90 sual",
+            "price": "30 manat",
+            "point": "60",
+            "date": "13/05/2018",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Abiyev Ruhan",
+            "examName": "Buraxılış imtahanı",
+            "questions": "85 sual",
+            "price": "50 manat",
+            "point": "97",
+            "date": "15/02/2022",
+            "grade": "Excellent"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Abışov Cəsur",
+            "examName": "9-cu sinif buraxılış imtahanı",
+            "questions": "80 sual",
+            "price": "20 manat",
+            "point": "91",
+            "date": "07/01/2019",
+            "grade": "Excellent"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Dövlətov Ziyadxan",
+            "examName": "Qəbul imtahanı",
+            "questions": "90 sual",
+            "price": "50 manat",
+            "point": "03",
+            "date": "10/08/2020",
+            "grade": "Very Poor"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Ələkbərov Vüsal",
+            "examName": "Buraxılış imtahanı",
+            "questions": "85 sual",
+            "price": "40 manat",
+            "point": "55",
+            "date": "09/11/2023",
+            "grade": "Satisfactory"
+        },
+        {
+            "userImage":"/iMAGES/Frame 95.png",
+            "fullName": "Bayramov Elşən",
+            "examName": "9-cu sinif buraxılış imtahanı",
+            "questions": "80 sual",
+            "price": "20 manat",
+            "point": "23",
+            "date": "02/06/2021",
+            "grade": "Very Poor"
+        }
+    ]

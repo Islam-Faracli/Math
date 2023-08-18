@@ -63,7 +63,7 @@ window.onload = function () {
 let videoPart = document.querySelector("#videos-part");
 
 function getData(){
-    fetch("../db/Exams.json")
+    fetch("../db/students.json")
     .then(res => res.json())
     .then(data => {
         data.forEach(element => {
@@ -77,8 +77,8 @@ function getData(){
                     <p>${element.examName}</p>
                     <p>${element.price}</p>
                     <div id="button-part">
-                        <button>Videonu izlə</button>
-                        <button>Daha ətraflı</button>
+                    <button id="daha-etraf"><a href="../imtahanenter.html">Testə başla</a></button>
+                        <button id="daha-etraf"><a href="../daha-etrafli.html">Daha ətraflı</a></button>
                     </div>
                 </div>
                 `

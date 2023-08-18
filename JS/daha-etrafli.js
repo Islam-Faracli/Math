@@ -13,7 +13,7 @@ options.forEach((element) => {
 // Api part
 
 let reytinq=document.querySelector(".reytinq");
-fetch("/db/reytinq.json")
+fetch("/db/students.json")
 .then((response)=>response.json())
 .then((data)=>{
     data.forEach((item)=>{
@@ -21,7 +21,7 @@ fetch("/db/reytinq.json")
         <div class="users" >
         <img src="/icons/crown-icon.png" alt="">
         <p class="username">${item.fullName}</p>
-        <p class="points">${item.point}</p>
+        <p class="points">${item.point}/100 Bal</p>
         <p class="date">${item.date}</p>
         </div>
         `;
