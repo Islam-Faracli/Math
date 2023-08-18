@@ -7,6 +7,7 @@
     line-height: normal;
     text-decoration: none;
     list-style: none;
+    transition:all 0.25s ease-in-out;
 }
 form {
     height: auto;
