@@ -55,97 +55,82 @@ modeChanger.addEventListener('click', () => {
     
     if (modeChanger.classList.contains('darktolight')) {
         modeChanger.classList.replace('darktolight', 'lighttodark');
-        
-        setTimeout(() => {
-            let options = document.querySelectorAll('.options');
-            let allptexts = document.querySelectorAll("p:not(.header-second-part)");
-        for (let i = 0; i < allptexts.length; i++) {
-            allptexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < alllabeltexts.length; i++) {
-            alllabeltexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < textboxes.length; i++) {
-            textboxes[i].style.background = '#393139';
-        }
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#393535'
-        }
-        headerpart.style.backgroundColor = '#2A2A2A';
-        formpart.style.backgroundColor = '#393139'
-        mainpart.style.backgroundColor = '#302B2B';
-        iconleft.style.background = 'url(../ICONS/white-arrow-left.svg)'
-        icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
-        modeChanger.style.background = 'var(--purple)'
-        modecircle.style.background = '#302B2B'
-        barcase.style.backgroundColor = '#5F5E5E';
-        usericon.style.background = 'url(../ICONS/userwhite.svg)'
-        
-    }, 250);
+        todark();
     }
 
     else if (modeChanger.classList.contains('lighttodark')) {
         modeChanger.classList.replace('lighttodark', 'darktolight');
-
-        setTimeout(() => {
-            let options = document.querySelectorAll('.options');
-            let allptexts = document.querySelectorAll("p:not(.header-second-part)");
-        for (let i = 0; i < allptexts.length; i++) {
-
-            allptexts[i].style.color = 'var(--black)';
-        }
-        for (let i = 0; i < alllabeltexts.length; i++) {
-            alllabeltexts[i].style.color = 'var(--black)';
-        }
-        for (let i = 0; i < textboxes.length; i++) {
-            textboxes[i].style.background = '#FFF';
-        }
-        headerpart.style.backgroundColor = '#FFF';
-        formpart.style.backgroundColor = '#F6F6F6';
-        mainpart.style.backgroundColor = '#F6F6F6';
-        iconleft.style.background = 'url(../ICONS/arrow-left.svg)'
-        icondown.style.background = 'url(../ICONS/arrow-down.svg)'
-        modeChanger.style.background = '#E2E2E2';
-        modecircle.style.background = '#FFF'
-        barcase.style.backgroundColor = 'var(--light-2)';
-        usericon.style.background = 'url(../ICONS/user.svg)'
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#FFF'
-        }
-    }, 250);
+        tolight();
     }
 
     else {
         modeChanger.classList.add('lighttodark');
-        setTimeout(() => {
-        let options = document.querySelectorAll('.options');
-        let allptexts = document.querySelectorAll("p:not(.header-second-part)");
-        for (let i = 0; i < allptexts.length; i++) {
-            allptexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < alllabeltexts.length; i++) {
-            alllabeltexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < textboxes.length; i++) {
-            textboxes[i].style.background = '#393139';
-        }
-        headerpart.style.backgroundColor = '#2A2A2A';
-        formpart.style.backgroundColor = '#393139'
-        mainpart.style.backgroundColor = '#302B2B';
-        iconleft.style.background = 'url(../ICONS/white-arrow-left.svg)'
-        icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
-        modeChanger.style.background = 'var(--purple)'
-        modecircle.style.background = '#302B2B'
-        barcase.style.backgroundColor = '#5F5E5E';
-        usericon.style.background = 'url(../ICONS/userwhite.svg)'
-        for (let i = 0; i < options.length; i++) {
-            options[i].style.background = '#393535'
-        }
-    }, 250);
+        todark();
     }
 });
 
+function todark () {
+    setTimeout(() => {
+        let options = document.querySelectorAll('.options');
+        let allptexts = document.querySelectorAll("p:not(.header-second-part)");
+    for (let i = 0; i < allptexts.length; i++) {
+        allptexts[i].style.color = 'white';
+    }
+    for (let i = 0; i < alllabeltexts.length; i++) {
+        alllabeltexts[i].style.color = 'white';
+    }
+    for (let i = 0; i < textboxes.length; i++) {
+        textboxes[i].style.background = '#393139';
+    }
+    for (let i = 0; i < options.length; i++) {
+        options[i].style.background = '#393535'
+    }
+    headerpart.style.backgroundColor = '#2A2A2A';
+    formpart.style.backgroundColor = '#393139'
+    mainpart.style.backgroundColor = '#302B2B';
+    iconleft.style.background = 'url(../ICONS/white-arrow-left.svg)'
+    icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
+    modeChanger.style.background = 'var(--purple)'
+    modecircle.style.background = '#302B2B'
+    barcase.style.backgroundColor = '#5F5E5E';
+    usericon.style.background = 'url(../ICONS/userwhite.svg)'
+    
+}, 250);
+}
+
+function tolight () {
+    setTimeout(() => {
+        let options = document.querySelectorAll('.options');
+        let allptexts = document.querySelectorAll("p:not(.header-second-part)");
+    for (let i = 0; i < allptexts.length; i++) {
+
+        allptexts[i].style.color = 'var(--black)';
+    }
+    for (let i = 0; i < alllabeltexts.length; i++) {
+        alllabeltexts[i].style.color = 'var(--black)';
+    }
+    for (let i = 0; i < textboxes.length; i++) {
+        textboxes[i].style.background = '#FFF';
+    }
+    headerpart.style.backgroundColor = '#FFF';
+    formpart.style.backgroundColor = '#F6F6F6';
+    mainpart.style.backgroundColor = '#F6F6F6';
+    iconleft.style.background = 'url(../ICONS/arrow-left.svg)'
+    icondown.style.background = 'url(../ICONS/arrow-down.svg)'
+    modeChanger.style.background = '#E2E2E2';
+    modecircle.style.background = '#FFF'
+    barcase.style.backgroundColor = 'var(--light-2)';
+    usericon.style.background = 'url(../ICONS/user.svg)'
+    for (let i = 0; i < options.length; i++) {
+        options[i].style.background = '#FFF'
+    }
+}, 250);
+}
+
 getData();
+
+
+
 
 
 // timer function
@@ -167,3 +152,11 @@ function updatetime() {
     activeTime.innerHTML = `${minutes} : ${seconds}`;
     time--;
 }
+
+window.onload = function () {
+    let localusers = localStorage.getItem("toDarkMode");
+    if (localusers === "true") { // Check for string "true"
+        modeChanger.classList.add('lighttodark');
+        todark();
+    }
+};

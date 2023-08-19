@@ -22,6 +22,9 @@ body {
 .darhTheme .cards{
   background-color: #302B2B;
 }
+.darhTheme .cards * {
+  color: var(--white) !important;
+}
 .darhTheme .cards .text-box button{
   border: 1px solid var(--white);
 }
@@ -354,7 +357,12 @@ header .user p:hover {
     margin: 40px 0 30px 0;
 }
 
-
+.cards-container{
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .cards{
   width: 253px;
   height: 300px;
@@ -408,7 +416,7 @@ header .user p:hover {
 }
 .cards .exam-results .results-scroll div{
   height: 10px;
-  width: 196px;
+  width: calc((23 / 25) * 100%) ;
   border-radius: 26px;
   background: #34A853;
 }

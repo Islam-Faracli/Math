@@ -1,7 +1,7 @@
 [
         {
-            "userImage":"/iMAGES/Frame 95.png",
-            "fullName": "Fərəcli İslam",
+            "userImage":"/iMAGES/Students picture/islam.jpg",
+            "fullName": "Fərəcli Islam",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
             "price": "20 manat",
@@ -10,7 +10,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/qiz.jpg",
             "fullName": "Rəcəbova Aysel",
             "examName": "Buraxılış imtahanı",
             "questions": "85 sual",
@@ -20,7 +20,7 @@
             "grade": "Excellent"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/esqin.jpg",
             "fullName": "Quliyev Eşqin",
             "examName": "9-cu sinif buraxılış imtahanı",
             "questions": "80 sual",
@@ -30,17 +30,17 @@
             "grade": "Poor"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/zahid.jpg",
             "fullName": "Şərifzadə Zahid",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
             "price": "40 manat",
-            "point": "93",
+            "point": "87",
             "date": "14/10/2018",
             "grade": "Excellent"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/Senan.jpg",
             "fullName": "Rəhimli Sənan",
             "examName": "Buraxılış imtahanı",
             "questions": "85 sual",
@@ -50,7 +50,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/rufet.jpg",
             "fullName": "Mehdibəyli Rüfət",
             "examName": "9-cu sinif buraxılış imtahanı",
             "questions": "80 sual",
@@ -60,7 +60,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/qiz.jpg",
             "fullName": "Kərimli Pərvin",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
@@ -70,7 +70,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/qiz.jpg",
             "fullName": "Mustafazadə Dilbər",
             "examName": "Buraxılış imtahanı",
             "questions": "85 sual",
@@ -80,7 +80,7 @@
             "grade": "Very Poor"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/qiz.jpg",            
             "fullName": "Usubova Turanə",
             "examName": "9-cu sinif buraxılış imtahanı",
             "questions": "80 sual",
@@ -90,7 +90,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/tural.jpg",
             "fullName": "Cahangirov Tural",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
@@ -100,7 +100,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/ruhan.jpg",
             "fullName": "Abiyev Ruhan",
             "examName": "Buraxılış imtahanı",
             "questions": "85 sual",
@@ -110,7 +110,7 @@
             "grade": "Excellent"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/cesur.jpg",
             "fullName": "Abışov Cəsur",
             "examName": "9-cu sinif buraxılış imtahanı",
             "questions": "80 sual",
@@ -120,7 +120,7 @@
             "grade": "Excellent"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/ziyad.jpg",
             "fullName": "Dövlətov Ziyadxan",
             "examName": "Qəbul imtahanı",
             "questions": "90 sual",
@@ -130,7 +130,7 @@
             "grade": "Very Poor"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/vusal.jpg",
             "fullName": "Ələkbərov Vüsal",
             "examName": "Buraxılış imtahanı",
             "questions": "85 sual",
@@ -140,7 +140,7 @@
             "grade": "Satisfactory"
         },
         {
-            "userImage":"/iMAGES/Frame 95.png",
+            "userImage":"/iMAGES/Students picture/elsen.jpg",
             "fullName": "Bayramov Elşən",
             "examName": "9-cu sinif buraxılış imtahanı",
             "questions": "80 sual",
