@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/color.css">
-    <link rel="stylesheet" href="./CSS/proqram.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/dashboard.css">
+    <link rel="stylesheet" href="/CSS/color.css">
+    <link rel="stylesheet" href="/CSS/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
-    <title>Imtahanlar</title>
 </head>
 <body>
     <aside>
         <div class="mathQuiz"><h2>MathQuiz</h2></div>
         <ul>
-            <a href="/dashboard.html">
+            <a href="#">
                 <li >
                     <div class="options" id="options-first" aria-selected="false">
                         <img src="/icons/icon Dashboard.png" alt="" class="icon-Dashboard">
@@ -63,44 +64,56 @@
         </div>
 
     </aside>
-
-    <div class="container">
-        <header>
-            <h2>Imtahanlar</h2>
-            <div class="user">
-                <img class="userPhoto" src="/iMAGES/pp.jpg" alt="">
-                <p>username@gmail.com</p>
-                <img class="arrow-down" src="/icons/arrow-down.svg" alt="">
-            </div>
-        </header>
-
-
-
-
-
-        <main>
-
-            <div id="filter-zone">
-                <div id="search-part">
-                    <input placeholder="Search..." type="text" id="search-text">
-                    <img src="./ICONS/search-b.svg" alt="">
+        <div class="container">
+            <header>
+                <h2>Dashboard</h2>
+                <div class="user">
+                    <img class="userPhoto" src="/iMAGES/pp.jpg" alt="">
+                    <p>username@gmail.com</p>
+                    <img class="arrow-down" src="/icons/arrow-down.svg" alt="">
                 </div>
-                <div id="other-part">
-                    <input placeholder="Növ" type="text" id="nov-text">
-                    <img src="./ICONS/arrow-down.svg" alt="">
-                    <input placeholder="Qiymət" type="text" id="price-text">
-                    <img src="./ICONS/arrow-down.svg" alt="">
+            </header>
+            <div class="main-container">
+                <div class="info-container">
+                    <div class="info-about-user">
+                        <img src="/iMAGES/Frame 90.png" alt="">
+                        <div class="userName">
+                            <h2>Rəhimli Sənan</h2>
+                            <p>Age: <span>19 years</span></p>
+                            <p>Parent: <span>Rəhimov Səməd</span></p>
+                            <div class="goals-of-user">
+                                <button>Goals</button>
+                                <img src="/icons/Medal.png" alt="">
+                                <img src="/icons/Crown.png" alt="">
+                                <img src="/icons/Medal 2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-successes">
+                        <div>
+                            <img src="/icons/Medal.png" alt="">
+                            <p>9-cu sinif buraxılış</p>
+                        </div>
+                        <div>
+                            <img src="/icons/Crown.png" alt="">
+                            <p>11-ci sinif buraxılış</p> 
+                        </div>
+                        <div>
+                            <img src="/icons/Medal 2.png" alt="">
+                            <p>Məntiq imtahanı</p>
+                        </div>
+                        <a href="" id="see-more">See more</a>
+                    </div>
+                </div>
+                <p>Imtahanlar</p>
+                <div class="cards-container">
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
+        </div>
 
-
-            <div id="videos-part">
-                
-            </div>
-
-        </main>
-    </div>
-
-    <script src="./JS/proqram.js"></script>
+    <script src="/JS/dashboard.js"></script>
 </body>
 </html>

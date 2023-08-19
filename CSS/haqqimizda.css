@@ -91,6 +91,9 @@ li #options-fifth{
     background-color: #7f75ea;
     color: var(--white);
 }
+li #options-fifth img{
+    content:url(/icons/stickynote.png)
+}
 li #options-first:hover img{
     opacity: 0.7;
     content:url(/icons/dashboard-icon-white.png);
@@ -120,21 +123,7 @@ li .selected{
     color: var(--white);
 }
 
-li .selected .icon-Dashboard{
-    content:url(/icons/dashboard-icon-white.png);
-}
-li .selected .icon-Imtahan{
-    content:url(/icons/imtahanlar-icon-white.png);
-}
-li .selected .icon-onlinevideos{
-    content:url(/icons/video-play-icon-white.png);
-}
-li .selected .icon-scoreboard{
-    content:url(/icons/chart-icon-white.png);
-}
-li .icon-haqqimizda{
-    content:url(/icons/stickynote.png);
-}
+
 
 img{
     width: 24px;
