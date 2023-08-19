@@ -72,7 +72,7 @@ function getData(){
                     <img src="../iMAGES/Tiny.png" alt="">
                     <div id="video-title">
                         <p>${element.questions}</p>
-                        <p>${element.fullName}</p>
+                        <p class="card-title">${element.fullName}</p>
                     </div>
                     <p>${element.examName}</p>
                     <p>${element.price}</p>
@@ -90,3 +90,24 @@ function getData(){
 
 getData();
 
+
+//search for questions in the questions section of the names
+
+let filterInput = document.querySelector('#search-text');
+
+filterInput.addEventListener('keyup', filterData);
+
+function filterData(e) {
+    let inputValue = e.target.value.toUpperCase();
+    let cardsTitle = document.querySelectorAll('.card-title');
+
+    cardsTitle.forEach(function (title) {
+        let titleText = title.textContent.toUpperCase();
+
+        if (titleText.includes(inputValue)) {
+            title.parentElement.parentElement.style.display = 'block';
+        } else {
+            title.parentElement.parentElement.style.display = 'none';
+        }
+    });
+}
