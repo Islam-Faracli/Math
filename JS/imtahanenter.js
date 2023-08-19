@@ -13,8 +13,24 @@ modeChanger.addEventListener('click', () => {
     
     if (modeChanger.classList.contains('darktolight')) {
         modeChanger.classList.replace('darktolight', 'lighttodark');
-        
-        setTimeout(() => {
+        todark();
+    }
+
+    else if (modeChanger.classList.contains('lighttodark')) {
+        modeChanger.classList.replace('lighttodark', 'darktolight');
+        tolight();
+    }
+
+    else {
+        modeChanger.classList.add('lighttodark');
+        todark();
+    }
+});
+
+
+
+function todark() {
+    setTimeout(() => {
         for (let i = 0; i < allptexts.length; i++) {
             allptexts[i].style.color = 'white';
         }
@@ -32,12 +48,10 @@ modeChanger.addEventListener('click', () => {
         modeChanger.style.background = 'var(--purple)'
         modecircle.style.background = '#302B2B'
     }, 250);
-    }
+}
 
-    else if (modeChanger.classList.contains('lighttodark')) {
-        modeChanger.classList.replace('lighttodark', 'darktolight');
-
-        setTimeout(() => {
+function tolight () {
+    setTimeout(() => {
         for (let i = 0; i < allptexts.length; i++) {
             allptexts[i].style.color = 'var(--black)';
         }
@@ -55,28 +69,12 @@ modeChanger.addEventListener('click', () => {
         modeChanger.style.background = '#E2E2E2';
         modecircle.style.background = '#FFF'
     }, 250);
-    }
+}
 
-    else {
+window.onload = function () {
+    let localusers = localStorage.getItem("toDarkMode");
+    if (localusers === "true") { // Check for string "true"
         modeChanger.classList.add('lighttodark');
-
-        setTimeout(() => {
-        for (let i = 0; i < allptexts.length; i++) {
-            allptexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < alllabeltexts.length; i++) {
-            alllabeltexts[i].style.color = 'white';
-        }
-        for (let i = 0; i < textboxes.length; i++) {
-            textboxes[i].style.background = '#393139';
-        }
-        headerpart.style.backgroundColor = '#2A2A2A';
-        formpart.style.backgroundColor = '#393139'
-        mainpart.style.backgroundColor = '#302B2B';
-        iconleft.style.background = 'url(../ICONS/white-arrow-left.svg)'
-        icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
-        modeChanger.style.background = 'var(--purple)'
-        modecircle.style.background = '#302B2B'
-    }, 250);
+        todark();
     }
-});
+};
