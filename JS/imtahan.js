@@ -146,3 +146,24 @@ modeChanger.addEventListener('click', () => {
 });
 
 getData();
+
+
+// timer function
+const startingminutes = 10;
+let time = startingminutes * 60;
+
+let activeTime = document.querySelector('#active-time');
+let imtahanvaxti = document.querySelector('#imtahan-vaxti');
+
+setInterval (updatetime, 1000);
+
+function updatetime() {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    minutes < 10 ? minutes = "0" + minutes : minutes;
+    seconds < 10 ? seconds = "0" + seconds : seconds;
+
+    activeTime.innerHTML = `${minutes} : ${seconds}`;
+    time--;
+}
