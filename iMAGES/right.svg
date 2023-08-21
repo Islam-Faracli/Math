@@ -1,0 +1,24 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="20" height="20" fill="#1E1E1E"/>
+<g id="Home page" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="3133" transform="translate(-1143 -306)" fill="white"/>
+<g id="Frame 13">
+<rect width="1440" height="450" transform="translate(-1143 -216)" fill="#675AF0"/>
+<g id="Frame 10">
+<g id="Frame 12">
+<g id="right icon">
+<rect x="-5" y="-5" width="30" height="30" rx="15" fill="white"/>
+<g id="material-symbols:arrow-forward-ios-rounded">
+<path id="Vector" d="M5.95898 17.5835C5.75065 17.3752 5.64648 17.1285 5.64648 16.8435C5.64648 16.5591 5.75065 16.3127 5.95898 16.1043L12.0632 10.0002L5.93815 3.87516C5.74371 3.68072 5.64648 3.43766 5.64648 3.146C5.64648 2.85433 5.75065 2.60433 5.95898 2.396C6.16732 2.18766 6.41398 2.0835 6.69898 2.0835C6.98343 2.0835 7.22982 2.18766 7.43815 2.396L14.4382 9.41683C14.5215 9.50016 14.5807 9.59044 14.6157 9.68766C14.6501 9.78489 14.6673 9.88905 14.6673 10.0002C14.6673 10.1113 14.6501 10.2154 14.6157 10.3127C14.5807 10.4099 14.5215 10.5002 14.4382 10.5835L7.41732 17.6043C7.22287 17.7988 6.98343 17.896 6.69898 17.896C6.41398 17.896 6.16732 17.7918 5.95898 17.5835Z" fill="#EBB44A"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="3133" fill="white" transform="translate(-1143 -306)"/>
+</clipPath>
+</defs>
+</svg>

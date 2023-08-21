@@ -1,4 +1,8 @@
-
+*{
+    font-family: Manrope;
+    font-style: normal;
+    line-height: normal;
+}
 nav{
     display: flex;
     justify-content: space-around;
@@ -27,13 +31,27 @@ nav{
 }
 
 /*header*/
-
+body div:nth-child(2) {
+    overflow: hidden;
+}
 header{
     background-color: var(--purple);
+    position: relative;
+    width: 300%;
+    overflow: hidden;
+    display: flex;
+}
+.moving-screen {
+    width: 1000px;
     height: 450px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 
 .btn-outline-header{
@@ -58,14 +76,86 @@ header{
 .info p:nth-child(2){
     margin-bottom: 45px;
 }
-
+.photo {
+    text-align: center;
+}
 .photo p{
     font-size: 32px;
     color: #fff;
 }
 
-.photo p span{
-    font-size: 20px;
+.screen-change {
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    top: 210px;
+    display: grid;
+    place-items: center;
+}
+#left-change {
+    left: 40px;
+}
+#right-change {
+    left: 1440px;
+}
+.toleftscreen, .torightscreen, .torightscreen2, .toleftscreen2 {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.toleftscreen {
+    animation-name: toleft;
+}
+.torightscreen {
+    animation-name: toright;
+}
+.toleftscreen2 {
+    animation-name: toleft2;
+}
+.torightscreen2 {
+    animation-name: toright2;
+}
+
+@keyframes toleft {
+    from {
+        left: -33%;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes toleft2 {
+    from {
+        left: -66%;
+    }
+    to {
+        left: -33%;
+    }
+}
+
+@keyframes toright {
+    from {
+        left: 0;
+    }
+    to {
+        left: -33%;
+    }
+}
+
+@keyframes toright2 {
+    from {
+        left: -33%;
+    }
+    to {
+        left: -66%;
+    }
 }
 
 /*main*/
@@ -135,6 +225,10 @@ header{
     display: flex;
     justify-content: space-evenly;
     color: var(--light);
+}
+
+.icon-item {
+    height: 200px;
 }
 
 .icon-item p{
@@ -262,3 +356,4 @@ footer{
     font-weight: 700;
     color: var(--gold);
 }
+
