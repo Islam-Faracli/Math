@@ -1,4 +1,41 @@
 
+let cards=document.querySelector(".cards-container");
+
+function getData(){
+    fetch("/db/students.json")
+    .then(response=>response.json())
+    .then(data=>{
+        console.log(data);
+        for(let i=0;i<4;i++){
+            cards.innerHTML +=`
+            <div class="cards">
+                <img src="/iMAGES/Tiny.png" alt="">
+                <div class="text-box">
+                    <div class="userName-and-countQuestion">
+                        <p>${data[i].questions}</p>
+                        <p>Rəhimli Sənan</p>
+                    </div>
+                    <p>${data[i].examName}</p>
+                    <div class="exam-results">
+                        <span>${data[i].point}/${parseInt(data[i].questions)}</span>
+                        <span>${Math.round((data[i].point/parseInt(data[i].questions))*100)}%</span>
+                        <div class="results-scroll">
+                            <div style="width:${(data[i].point/parseInt(data[i].questions))*100}%;"></div>
+                        </div>
+                    </div>
+                    <button>
+                        <a href="/daha-etrafli.html">Daha ətraflı</a>
+                    </button>
+                </div>
+            </div>
+            `;
+        }
+    })
+}
+
+getData();
+
+
 // to dark mode
 
 let body = document.querySelector("body");
@@ -6,7 +43,7 @@ let toDark = document.querySelector(".mode-box");
 let p = document.querySelectorAll("p");
 let h2 = document.querySelectorAll("h2");
 let span = document.querySelectorAll("span");
-
+console.log(p);
 toDark.addEventListener("click", () => {
     toDark.classList.toggle("toDarkMode");
     setTimeout(() => {
