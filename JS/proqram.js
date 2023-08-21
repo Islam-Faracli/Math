@@ -71,7 +71,7 @@ function getData(){
                 <div class="separate-video">
                     <img src="../iMAGES/Tiny.png" alt="">
                     <div id="video-title">
-                        <p>${element.questions}</p>
+                        <p>${element.questions} sual</p>
                         <p class="card-title">${element.fullName}</p>
                     </div>
                     <p>${element.examName}</p>
@@ -91,7 +91,7 @@ function getData(){
 getData();
 
 
-//search for questions in the questions section of the names
+//search for names
 
 let filterInput = document.querySelector('#search-text');
 

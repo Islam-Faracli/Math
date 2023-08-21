@@ -75,7 +75,7 @@ function getData(){
                 <div class="separate-video">
                     <img src="./IMAGES/video.svg" alt="">
                     <div id="video-title">
-                        <p>${element.questions}</p>
+                        <p>${element.questions} sual</p>
                         <p>${element.fullName}</p>
                     </div>
                     <p>${element.examName}</p>
