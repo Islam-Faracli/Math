@@ -110,4 +110,4 @@ function filterData(e) {
             title.parentElement.parentElement.style.display = 'none';
         }
     });
-}
+};
