@@ -283,14 +283,15 @@ header .user p:hover{
     height: 40px;
 }
 .type-box .type-list{
-    padding: 0 15px;
+    padding: 0px 15px;
     width: 163px;
     height: 40px;
     background-color: var(--white);
     box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     display:flex;
-    gap: 80px;
+    /* gap: 80px; */
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     right: 15px;
@@ -317,6 +318,10 @@ header .user p:hover{
     padding: 0 15px;
     display: flex;
     align-items: center;
+    animation-name: showTypes;
+    animation-duration: 1s;
+    animation-delay: calc(0.1s*var(--i));
+    animation-fill-mode: forwards;
 
     color: var(--light);
     border-radius: 10px;
@@ -329,7 +334,21 @@ header .user p:hover{
     display: initial;
 }
 .type-box .select-type li:hover{
-    background-color:rgb(204, 204, 204);
+    background-color:rgb(224, 224, 224);
+
+}
+@keyframes showTypes {
+    to {
+        transform: rotateX(360deg);
+        -webkit-transform: rotateX(360deg);
+        -moz-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
+        -o-transform: rotateX(360deg);
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+}
 }
 .scoreBoard-page{
     margin: 30px;
