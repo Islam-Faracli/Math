@@ -9,6 +9,9 @@
     list-style: none;
     transition:all 0.25s ease-in-out;
 }
+button a{
+    color: #fff;
+}
 form {
     height: auto;
     background-color: #F6F6F6;
@@ -332,4 +335,77 @@ main {
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: #7f75ea; 
+}
+
+
+
+
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#close-modal {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content p {
+    width: 344px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    margin-top: 20px;
+    display: flex;
+    width: 162px;
+    height: 50px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background: var(--purple);
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#back-button {
+    border-radius: 7px;
+    border: 2px solid var(--purple);
+    background-color: #fff;
+    color: var(--purple);
 }

@@ -47,6 +47,7 @@ function todark() {
         icondown.style.background = 'url(../ICONS/white-arrow-down.svg)'
         modeChanger.style.background = 'var(--purple)'
         modecircle.style.background = '#302B2B'
+        localStorage.setItem("toDarkMode", true);
     }, 250);
 }
 
@@ -68,6 +69,7 @@ function tolight () {
         icondown.style.background = 'url(../ICONS/arrow-down.svg)'
         modeChanger.style.background = '#E2E2E2';
         modecircle.style.background = '#FFF'
+        localStorage.setItem("toDarkMode", false);
     }, 250);
 }
 

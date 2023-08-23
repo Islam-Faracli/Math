@@ -12,7 +12,7 @@ let barcase = document.querySelector('#bar');
 let usericon = document.querySelector('#telebe-adi-icon');
 let options = document.querySelectorAll('.options');
 let question = document.querySelector('#question');
-
+console.log(alllabeltexts.values);
 function getData(){
     fetch("../db/questions.json")
     .then(res => res.json())
@@ -94,7 +94,7 @@ function todark () {
     modecircle.style.background = '#302B2B'
     barcase.style.backgroundColor = '#5F5E5E';
     usericon.style.background = 'url(../ICONS/userwhite.svg)'
-    
+    localStorage.setItem("toDarkMode", true);
 }, 250);
 }
 
@@ -124,6 +124,7 @@ function tolight () {
     for (let i = 0; i < options.length; i++) {
         options[i].style.background = '#FFF'
     }
+    localStorage.setItem("toDarkMode", false);
 }, 250);
 }
 
@@ -160,3 +161,21 @@ window.onload = function () {
         todark();
     }
 };
+
+//* popup window    
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("back-button");
+const nextPageButton = document.getElementById("next-page");
+const endButton = document.getElementById("end-exam");
+
+nextPageButton.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+endButton.addEventListener("click", () => {
+    modal.style.display = "none";
+});
