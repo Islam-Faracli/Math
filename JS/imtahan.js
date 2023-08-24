@@ -166,16 +166,17 @@ window.onload = function () {
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("back-button");
 const nextPageButton = document.getElementById("next-page");
-const endButton = document.getElementById("end-exam");
 
-nextPageButton.addEventListener("click", () => {
+nextPageButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
     modal.style.display = "flex";
+    document.body.style.overflow = 'hidden';
 });
 
-closeModal.addEventListener("click", () => {
+closeModal.addEventListener("click", (event) => {
+    event.preventDefault();
     modal.style.display = "none";
+    document.body.style.overflow = 'auto';
 });
 
-endButton.addEventListener("click", () => {
-    modal.style.display = "none";
-});
+
