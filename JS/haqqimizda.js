@@ -12,7 +12,7 @@ options.forEach((element) => {
 
 //dark mode
 
-let body = document.querySelector("body");
+const body = document.querySelector("body");
 let toDark = document.querySelector(".mode-box");
 let p = document.querySelectorAll("p");
 let h2 = document.querySelectorAll("h2");

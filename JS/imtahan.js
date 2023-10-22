@@ -12,7 +12,8 @@ let barcase = document.querySelector('#bar');
 let usericon = document.querySelector('#telebe-adi-icon');
 let options = document.querySelectorAll('.options');
 let question = document.querySelector('#question');
-console.log(alllabeltexts.values);
+let sunIcon = document.querySelector('#mode-circle > div');
+
 function getData(){
     fetch("../db/questions.json")
     .then(res => res.json())
@@ -24,23 +25,23 @@ function getData(){
                 <p id="question-part">${user.question}</p>
                 <p>Düzgün variantı seçin</p>
                 <div class="options">
-                    <input name="answer" type="radio">
+                    <input class="answer" name="answer" type="radio">
                     <p id="answer-text">${user.answer1}</p>
                 </div>
                 <div class="options">
-                    <input name="answer" type="radio">
+                    <input class="answer" name="answer" type="radio">
                     <p id="answer-text">${user.answer2}</p>
                 </div>
                 <div class="options">
-                    <input name="answer" type="radio">
+                    <input class="answer" name="answer" type="radio">
                     <p id="answer-text">${user.answer3}</p>
                 </div>
                 <div class="options">
-                    <input name="answer" type="radio">
+                    <input class="answer" name="answer" type="radio">
                     <p id="answer-text">${user.answer4}</p>
                 </div>
                 <div class="options">
-                    <input name="answer" type="radio">
+                    <input class="answer" name="answer" type="radio">
                     <p id="answer-text">${user.answer5}</p>
                 </div>
             </div>
@@ -95,6 +96,7 @@ function todark () {
     barcase.style.backgroundColor = '#5F5E5E';
     usericon.style.background = 'url(../ICONS/userwhite.svg)'
     localStorage.setItem("toDarkMode", true);
+    sunIcon.style.background = 'url(...)';
 }, 250);
 }
 
@@ -125,6 +127,7 @@ function tolight () {
         options[i].style.background = '#FFF'
     }
     localStorage.setItem("toDarkMode", false);
+    sunIcon.style.background = 'url(../ICONS/sun-regular.svg)';
 }, 250);
 }
 

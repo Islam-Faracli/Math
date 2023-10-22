@@ -9,6 +9,10 @@
     list-style: none;
     transition:all 0.25s ease-in-out;
 }
+.answer {
+    width: 17px !important;
+    height: 17px;
+}
 button a{
     color: #fff;
 }
@@ -199,6 +203,15 @@ main {
     height: calc(0.8 * 22px);
     border-radius: 50%;
     background: #FFF;
+    display: grid;
+    place-items: center;
+}
+
+#mode-circle > div{
+    background: url(../ICONS/sun-regular.svg);
+    background-size: cover;
+    width: calc(0.6 * 22px);
+    height: calc(0.6 * 22px);
 }
 
 .lighttodark {

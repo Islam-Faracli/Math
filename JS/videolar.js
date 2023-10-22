@@ -76,7 +76,7 @@ function getData(){
                     <img src="./IMAGES/video.svg" alt="">
                     <div id="video-title">
                         <p>${element.questions} sual</p>
-                        <p>${element.fullName}</p>
+                        <p id="fulname">${element.fullName}</p>
                     </div>
                     <p>${element.examName}</p>
                     <button>Videonu izlə</button>
@@ -89,3 +89,22 @@ function getData(){
 
 
 getData();
+
+let filterInput = document.querySelector('#search-text');
+
+filterInput.addEventListener('keyup', filterData);
+
+function filterData(e) {
+    let inputValue = e.target.value.toUpperCase();
+    let cardsTitle = document.querySelectorAll('#fulname');
+
+    cardsTitle.forEach(function (title) {
+        let titleText = title.textContent.toUpperCase();
+
+        if (titleText.includes(inputValue)) {
+            title.parentElement.parentElement.style.display = 'block';
+        } else {
+            title.parentElement.parentElement.style.display = 'none';
+        }
+    });
+};

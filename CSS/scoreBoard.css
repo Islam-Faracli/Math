@@ -313,41 +313,34 @@ header .user p:hover{
     display: none;
 }
 .type-box .select-type li{
+    overflow: hidden;
     width: 163px;
     height: 40px;
     padding: 0 15px;
     display: flex;
     align-items: center;
     animation-name: showTypes;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
     animation-delay: calc(0.1s*var(--i));
     animation-fill-mode: forwards;
-
+    visibility: hidden;
     color: var(--light);
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .type-box .type-list:hover .select-type{
     display: initial;
+    overflow: hidden;
 }
 .type-box .select-type li:hover{
     background-color:rgb(224, 224, 224);
-
 }
 @keyframes showTypes {
-    to {
-        transform: rotateX(360deg);
-        -webkit-transform: rotateX(360deg);
-        -moz-transform: rotateX(360deg);
-        -ms-transform: rotateX(360deg);
-        -o-transform: rotateX(360deg);
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s linear;
-        -ms-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
+    from{
+        transform: translateX(-100%);
+}
+    to{
+        transform: translateX(0%);
+        visibility: visible;
 }
 }
 .scoreBoard-page{
